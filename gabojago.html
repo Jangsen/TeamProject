@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가보자고</title>
+  <style>
+    @media screen and (max-width: 320px) {
+      * {
+        width: 100%; /* 화면 너비에 맞게 자동 조정 */
+        max-width: none; /* 최대 너비 설정 해제 */
+        resize: none; /* 크기 조정 비활성화 */
+    }
+    }
+    html{
+      scrollbar-width: thin;
+    } 
+    header{
+      width: 100%;
+      height: 100px;
+      background-color: #fff;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+    }
+    header .left, .center, .right {
+      flex: 1;
+      color: azure;
+      padding: 10px;
+    }
+    header .left{
+      display: flex;
+      align-items: center;
+    }
+    header .left img{
+      width: 40px;
+    }
+    header .center{
+      align-self: center;
+      font-size: 30px;
+    }
+    header .center a{
+      color: #000;
+      text-decoration-line: none;
+    }
+    header .center a:hover{
+      color: blue;
+    }
+    header .right{
+      display: flex;
+      align-items: center;
+      justify-content: right;
+    }
+    header .right a:hover{
+      color:blue;
+    }
+    header .right a{
+      color: #000;
+      text-decoration-line: none;
+    }
+    .intro {
+      display: flex;
+      width: 100%;
+      height: 200px;
+      background-color: #000;
+      color: #fff;
+    }
+    .intro .left, .center, .right {
+      flex: 1;
+      color: azure;
+      padding: 10px;
+      resize: none;
+      white-space: nowrap;
+    }
+    .intro .left{
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+    }
+    .intro .left .pagename {
+      display: flex;
+      align-items: end;
+      font-size: 40px;
+    }
+    .intro .left .thema {
+      display: flex;
+      align-items: end;
+      font-size: 20px;
+    }
+    .intro .left div{
+      flex: 1;
+      align-items: center;
+      padding-left: 30px;
+    }
+    .intro .left .thema a{
+      margin-right: 10px;
+      text-decoration-line: none;
+      font-size: 20px;
+    }
+    .intro .center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+
+    }
+    .intro .right {
+    }
+    .intro .right input {
+      margin-top: 120px;
+      width: 250px;
+      border: 1px solid #fff;
+      background: transparent;
+      color: #fff;
+      font-size: 20px;
+    
+    }
+    .subject {
+      width: 100%;
+      height: 770px;
+      background-color: blue;
+    }
+    .subject .left{
+
+    }
+    .subject .right{
+      display: flex;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="left">
+      <a href="">
+        <img src="img/user.png" alt="">
+      </a>
+      </div>
+    <div class="center">
+      <a href="">GAXGA</a>
+    </div>
+    <nav class="right">
+      <a href="">
+        <span>MENU</span>
+      </a>
+    </nav>
+  </header>
+    <div class="intro">
+      <div class="left">
+        <div class="pagename">가보자고</div>
+        <div class="thema">
+          <a href="">산</a>
+          <a href="">시장</a>
+          <a href="">테마파크</a>
+          <a href="">카페</a>
+          <a href="">문화</a>
+        </div>
+      </div>
+      <div class="center">
+        <div><a href=""><</a></div>
+        <div>
+          강원
+        </div>
+        <div><a href="">></a></div>
+      </div>
+      <div class="right">
+        <input type="text">
+      </div>
+    </div>
+    <div class="subject">
+      <div class=>
+        <a href="">목록 1</a>
+        <a href="">목록 2</a>
+        <a href="">목록 3</a>
+        <a href="">목록 4</a>
+        <a href="">목록 5</a>
+        <a href="">목록 6</a>
+        <a href="">목록 7</a>
+      </div>
+      <div class="right"></div>
+    </div>
+  </body>
+  </html>
+  
+  
+  
