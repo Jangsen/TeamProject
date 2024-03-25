@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>게시글 상세보기</title>
+  <link rel="stylesheet" type="text/css" href="css/post_result.css">
+
+</head>
+<body>
+  <header class="header">GA X GA</header>
+  <div class="wrap">
+  <div class="side"><h2>지역별 분류</h2>
+    <ul>
+      <li>
+        <!-- <img src=images/서울.png>
+        <img src=images/서울.png>
+        <img src=images/서울.png> -->
+        서울 / 경기 / 인천 / 대전 / 대구 / 부산 / 제주
+      </li>
+    </ul>
+    
+  </div>
+  
+  <div class="ss"> </div>
+  <div class="review_box">
+  <div style="text-align: center;"><h1>강원도</h1> </div>
+  <div class="post-container">
+  <div class="post-content-container">
+    <div class="post-title">여행지 방문 후기 올립니다</div>
+    <div class="post-meta">
+      <span>작성자: 홍길동</span>
+      <input type="button" value="수정">
+      <input type="button" value="삭제">
+
+    </div>
+    <div class="post-meta">
+      <span>작성일: 2024-03-24</span>
+    </div>
+    <img src="img/pic-2.jpg" alt="게시글 이미지" class="post-image">
+    <div class="post-content">
+      <p>너무 재밌었어요~!!!!!</p>
+    </div>
+    <button class="like-btn" ud="likebtn">좋아요
+    </button>
+    <span id="likeCount">0</span> 명이 이 게시글을 좋아합니다.
+  </div>
+  <div id="tag_box">
+    <span id="tag"># 강원도</span>
+    <span id="tag"># 바다</span>
+    <span id="tag"># 맛집</span>
+  </div> 
+  <div class="comment-container">
+    <h3>댓글</h3>
+    <form class="comment-input">
+      <input style ="width: 30%;" id="client" type ="text" maxlength="10" placeholder="닉네임">
+      <input style ="width: 70%;" id="comment" type ="text" placeholder="댓글을 입력하세요">
+      <input id="comment-save" type="submit" value="댓글 작성">
+      <ul class="comment-list">
+      </ul>
+    </form>
+  </div>
+    </div>
+  </div>
+</div>
+  <script src="js/post_result.js"></script>
+
+</body>
+</html>
