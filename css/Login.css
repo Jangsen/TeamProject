@@ -26,7 +26,8 @@
 #login_main #top h2{
   font-size: 40px;
   margin-top: 95px;
-  font-family: 'Jalnan';
+  font-family: 'DMSerif';
+  font-weight: 500;
 }
 
 #login_main #middle{
