@@ -86,3 +86,10 @@ input[type="submit"]:hover {
   margin-bottom: 20px;
   cursor: pointer;
 }
+#map{
+  width:700px;
+  height:250px;
+  margin-top:10px;
+  margin-bottom: 30px;
+  display:none;
+}

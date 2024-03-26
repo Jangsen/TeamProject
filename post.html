@@ -4,12 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>게시글 작성 페이지</title>
-  <!-- 구글 지도 API 스크립트 로드 -->
-<script src="https://maps.googleapis.com/maps/api/js?key=6d7e2f086ffa97eb8f4b35fa8cc12439&libraries=places"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+  <!-- 카카오맵 api 스크립트 -->
+  <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6d7e2f086ffa97eb8f4b35fa8cc12439&libraries=services"></script>
+<script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 <link rel="stylesheet" type="text/css" href="css/post.css">
-
 </head>
 <body>
   <div id="wrap" class="wrap">
@@ -39,24 +37,30 @@
           <option>바다</option>
         </select>
       </div>
-      <label for="image">이미지 업로드:</label>
-      <input type="file" id="image" name="image" accept="img/*">
-      <input type="submit" value="이미지 업로드">
+      <label for="image">사진 첨부</label><br>
+      <input type="file" id="fileInput" multiple accept="image/*"> <br>
+    <div id="previewArea"></div> <br>
+  
       <div>
       <label for="title">제목:</label><br>
       <input type="text" id="title" name="title"><br>
       <label for="title">작성자:</label><br>
       <input type="text" id="writer" name="title"><br>
+    
       <label for="content">내용:</label><br>
-      <textarea id="content" name="content" rows="20" cols="50"></textarea><br>
-      <label for="address">여행지 주소 :</label>
-      <button type="button" onclick="findAddress()">
-      주소찾기</button> <br><br>
-      <input type="text" id="address" name="address"><br><br>
-      <input type="submit" value="작성하기">
-      <input type="submit" value="취소">
-
+      <textarea id="content" name="content" rows="20" cols="50">
+      </textarea><br>
+      <label for="address">주소:</label>
+      <input type="button" onclick="sample5_execDaumPostcode()" value="주소 검색">
+        <input type="text" id="sample5_address" size="50" name="naddr" placeholder="주소">	
+<input type="text" id="sample5_detailAddress" size="50" placeholder="상세주소">
+      <div id="map"></div> <br />
+      <div>
+      <input style="float: right;" type="submit" value="게시하기">
+    </div>
   </form>
 </div>
+<script src="js/post.js">
+</script>
 </body>
 </html>
