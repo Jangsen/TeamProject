@@ -1,16 +1,16 @@
-@font-face {
-  src: url(../font/Jalnan2/Jalnan2TTF.ttf);
-  font-family:"tae";
+@font-face{
+  font-family: 'Jalnan';
+  src:url(../fonts/Jalnan2TTF.ttf) ;
 }
 *{
-  font-family: "tae";
+  font-family: "Jalnan";
 }
 html,body{
 	height: 100%;
 }
 #review_box{
   height: 80px;
-  /* width: 50%; */
+  width: 50%;
   background-color: #ffffff;
   text-align: center;
   line-height: 40px;

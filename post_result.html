@@ -5,26 +5,102 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>게시글 상세보기</title>
   <link rel="stylesheet" type="text/css" href="css/post_result.css">
-
+  <script type="text/javascript"
+  src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6d7e2f086ffa97eb8f4b35fa8cc12439"></script>
 </head>
 <body>
   <header class="header">GA X GA</header>
   <div class="wrap">
-  <div class="side"><h2>지역별 분류</h2>
-    <ul>
-      <li>
-        <!-- <img src=images/서울.png>
-        <img src=images/서울.png>
-        <img src=images/서울.png> -->
-        서울 / 경기 / 인천 / 대전 / 대구 / 부산 / 제주
-      </li>
-    </ul>
+    <div class="side_box">
+    <div style="text-align: center;"><h1>[후기 게시글 모음]</h1> </div>
+    <div class="board-container">
+      <div class="side">
+    <div style="border-bottom: 1px solid #000000;">[지역]
+      <ul>
+      <li>[서울 /</li>
+      <li>경기 /</li>
+      <li>인천 /</li>
+      <li>강원 /</li>
+      <li>부산 /</li>
+      <li>경북 /</li>
+      <li>경남 /</li>
+      <li>전북 /</li>
+      <li>전남] </li>
+    </ul></div>
+    <br>
+    <!-- <div style="border-bottom: 1px solid #000000;">[테마]
+      <ul>
+      <li>산 /</li>
+      <li>바다 /</li>
+      <li>액티비티 /</li>
+      <li>축제 /</li>
+      <li>카페 /</li>
+      <li>맛집 /</li>
+      <li>캠핑 </li>
+    </ul></div> -->
+    <div style="margin-top:  10px;">[후기 게시글 모음]
+      <div class="review-list"> 
+        <div class="writer">홍길동</div>
+        <div class="review-title">방문후기</div>
+      </div>
+      <div class="review-list"> 
+        <div class="writer">김철수</div>
+        <div class="review-title">방문후기</div>
+      </div>
+      <div class="review-list"> 
+        <div class="writer">김태인</div>
+        <div class="review-title">방문후기</div>
+      </div>
+      <div class="review-list"> 
+        <div class="writer">홍길동</div>
+        <div class="review-title">방문후기</div>
+      </div>
+      <div class="review-list"> 
+        <div class="writer">홍길동</div>
+        <div class="review-title">방문후기</div>
+      </div>
+      <div class="review-list"> 
+        <div class="writer">홍길동</div>
+        <div class="review-title">방문후기</div>
+      </div>
+      <div class="review-list"> 
+        <div class="writer">홍길동</div>
+        <div class="review-title">방문후기</div>
+      </div>
+      <div class="review-list"> 
+        <div class="writer">홍길동</div>
+        <div class="review-title">방문후기</div>
+      </div>
+      <div class="review-list"> 
+        <div class="writer">홍길동</div>
+        <div class="review-title">방문후기</div>
+      </div>
+      <div class="review-list"> 
+        <div class="writer">홍길동</div>
+        <div class="review-title">방문후기</div>
+      </div>
+      <div class="review-list"> 
+        <div class="writer">홍길동</div>
+        <div class="review-title">방문후기</div>
+      </div>
+      <div class="review-list"> 
+        <div class="writer">홍길동</div>
+        <div class="review-title">방문후기</div>
+      </div>
+      <div class="review-list"> 
+        <div class="writer">홍길동</div>
+        <div class="review-title">방문후기</div>
+      </div>
+      
+    </div>
     
   </div>
-  
+  </div>
+</div>
+
   <div class="ss"> </div>
   <div class="review_box">
-  <div style="text-align: center;"><h1>강원도</h1> </div>
+  <div style="text-align: center;"><h1>[강원도]</h1> </div>
   <div class="post-container">
   <div class="post-content-container">
     <div class="post-title">여행지 방문 후기 올립니다</div>
@@ -50,20 +126,23 @@
     <span id="tag"># 바다</span>
     <span id="tag"># 맛집</span>
   </div> 
+  <div id="map-container"></div>
+
   <div class="comment-container">
     <h3>댓글</h3>
     <form class="comment-input">
       <input style ="width: 30%;" id="client" type ="text" maxlength="10" placeholder="닉네임">
       <input style ="width: 70%;" id="comment" type ="text" placeholder="댓글을 입력하세요">
       <input id="comment-save" type="submit" value="댓글 작성">
-      <ul class="comment-list">
-      </ul>
     </form>
+    <ul class="comment-list">
+    </ul>
   </div>
     </div>
   </div>
 </div>
   <script src="js/post_result.js"></script>
 
+</script>
 </body>
 </html>
