@@ -12,22 +12,22 @@
 
 #myPage_main #title{
   width: 100%;
-  height: 150px;
+  height: 100px;
   text-align: center;
 }
 
-#myPage_main #title h3{
+#myPage_main #title h2{
   width: 400px;
-  height: 150px;
+  height: 100px;
   margin:0 auto;
-  line-height: 150px;
+  line-height: 100px;
   font-size: 28px;
   font-family: 'GmarketSans';
   font-weight: 600;
 }
 
 #myPage_main #contents{
-  width: 100%;
+  width: 80%;
   height: 100%;
   margin: 0 auto;
   background-color: #DAE9E7;
@@ -73,16 +73,19 @@
   width: 100%;
   height: 100%;
   background-color: white;
+  font-family: 'GmarketSans';
+  font-weight: 600;
 }
 /* 오른쪽영역 */
 #myPage_main #rightContent{
   float: left;
   width: 65%;
-  margin-left: 104px;
+  margin-left: 80px;
   background-color: white;
   display: flex;
   flex-direction: column;
-  font-family: 'Multicolore';
+  font-family: 'GmarketSans';
+  font-weight: 600;
 }
 
 #myPage_main #rightContent .content{
@@ -97,10 +100,10 @@
   width: 100%;
   height: 270px;
   position: absolute;
-  display: none;
+  visibility: hidden;
 }
 #myPage_main #rightContent .selectedArea.active{
-  display: block;
+  visibility: visible;
 }
 /* 오른쪽 3개중 top 부분 프로필 수정 */
 #myPage_main #rightContent #profileImage{
@@ -119,6 +122,9 @@
   width: 20%;
   height: 100%;
   border: none;
+  font-family: 'GmarketSans';
+  font-weight: 600;
+  cursor: pointer;
 }
 
 #myPage_main #rightContent #profileInfo{
@@ -133,21 +139,33 @@
   line-height: 67.5px;
   display: flex;
   justify-content: space-between;
-  padding: 0 30px;
+  text-align: center;
 }
 #myPage_main #rightContent #profileInfo ul li label{
-  width: 25%;
+  width: 20%;
 }
 #myPage_main #rightContent #profileInfo ul li span{
-  width: 50%;
+  width: 60%;
 }
 #myPage_main #rightContent #profileInfo ul li button{
-  width: 25%;
+  width: 20%;
   border: none;
   background-color: white;
+  cursor: pointer;
+  font-family: 'GmarketSans';
+  font-weight: 600;
 }
 #myPage_main #rightContent #profileInfo ul li input{
+  width: 60%;
+  border: none;
+  font-size: 16px;
+  padding-left: 25px;
+}
+#myPage_main #rightContent #profileInfo ul li .hidden{
   display: none;
+}
+#myPage_main #rightContent #profileInfo ul li input:focus{
+  outline: none;
 }
 /* 나의 작성글 */
 #myPage_main #rightContent #myWrited{
@@ -158,17 +176,114 @@
 #myPage_main #rightContent #myWrited #myWritedArea{
   display: flex;
   flex-direction: column;
+  width: 100%;
+  align-items: center;
 }
 #myPage_main #rightContent #myWrited .myWritedList{
   display: flex;
   height: 45px;
+  line-height: 45px;
+  justify-content: space-around;
+  width: 100%;
+  text-align: center;
+}
+#myPage_main #rightContent #myWrited .myWritedList p{
+  width: 40%;
+}
+#myPage_main #rightContent #myWrited .myWritedList span{
+  width: 40%;
+}
+#myPage_main #rightContent #myWrited .myWritedList button{
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  width: 10%;
 }
 #myPage_main #rightContent #myWrited #myWritedPageList{
   display: flex;
   height: 45px;
+  width: 100%;
+  justify-content: center;
+}
+#myPage_main #rightContent #myWrited #myWritedPageList button{
+  margin-right: 10px;
+  border: none;
+  background-color: white;
 }
 /* 저장 목록 */
+#myPage_main #rightContent #saved{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#myPage_main #rightContent #saved #savedListArea{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+#myPage_main #rightContent #saved .savedList{
+  display: flex;
+  height: 45px;
+  line-height: 45px;
+  justify-content: space-around;
+  width: 100%;
+  text-align: center;
+}
+#myPage_main #rightContent #saved .savedList p{
+  width: 40%;
+}
+#myPage_main #rightContent #saved .savedList span{
+  width: 40%;
+}
+#myPage_main #rightContent #saved #savedPageList{
+  display: flex;
+  height: 45px;
+  width: 100%;
+  justify-content: center;
+}
+#myPage_main #rightContent #saved #savedPageList button{
+  margin-right: 10px;
+  border: none;
+  background-color: white;
+}
 /* 나의 베스트 게시글 */
+#myPage_main #rightContent #receiveLike{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#myPage_main #rightContent #receiveLike #receiveLikeArea{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+#myPage_main #rightContent #receiveLike .receiveLikeList{
+  display: flex;
+  height: 45px;
+  line-height: 45px;
+  justify-content: space-around;
+  width: 100%;
+  text-align: center;
+}
+#myPage_main #rightContent #receiveLike .receiveLikeList p{
+  width: 40%;
+}
+#myPage_main #rightContent #receiveLike .receiveLikeList span{
+  width: 40%;
+}
+#myPage_main #rightContent #receiveLike #receiveLikePageList{
+  display: flex;
+  height: 45px;
+  width: 100%;
+  justify-content: center;
+}
+#myPage_main #rightContent #receiveLike #receiveLikePageList button{
+  margin-right: 10px;
+  border: none;
+  background-color: white;
+}
 /* 오른쪽 3개중 middle 부분 */
 #myPage_main #rightContent #middle{
   display: flex;
@@ -188,16 +303,17 @@
   align-items: center;
   height: 90px;
   margin-left: 34px;
-  font-size: 30px;
+  font-size: 27px;
 }
+
 #myPage_main #rightContent #middle .gaga .gagaTitle i{
   padding-top: 8px;
   margin-right: 8px;
 }
 #myPage_main #rightContent #middle .gaga p{
   height: 90px;
-  font-size: 50px;
-  line-height: 90px;
+  font-size: 40px;
+  line-height: 80px;
 }
 #myPage_main #rightContent #middle .gaga p i{
   margin-right: 10px;
