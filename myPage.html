@@ -18,16 +18,15 @@
           <aside id="leftContent">
             <ul>
               <li><img src="img/default_profile.png" alt=""></li>
-              <li><p>프로필 정보 수정</p></li>
-              <li><p>나의 작성글</p></li>
-              <li><p>저장 목록</p></li>
-              <li><p>나의 베스트 게시글</p></li>
+              <li><button onclick="SelectedContent(0)">프로필 정보 수정</button></li>
+              <li><button onclick="SelectedContent(1)">나의 작성글</button></li>
+              <li><button onclick="SelectedContent(2)">저장 목록</button></li>
+              <li><button onclick="SelectedContent(3)">나의 베스트 게시글</button></li>
             </ul>
           </aside>
           <section id="rightContent">
-            <!-- todo : top부분 컨텐츠 보여질 영역 작업해야됨 임시로 한개만함 -->
             <div id="top" class="content">
-              <div id="modifyProfile" class="selectedArea">
+              <div id="modifyProfile" class="selectedArea active">
                 <div id="profileImage">
                   <img src="img/default_profile.png" alt="프로필 이미지">
                   <button>프로필 사진 변경</button>
@@ -64,9 +63,97 @@
                   </form>
                 </div>
               </div>
-              <div id="myWrited" class="selectedArea"></div>
-              <div id="saveList" class="selectedArea"></div>
-              <div id="receiveLike" class="selectedArea"></div>
+              <div id="myWrited" class="selectedArea">
+                <div id="myWritedArea">
+                  <div class="myWritedList">
+                    <p><a href="">춘천 남이섬</a></p>
+                    <span>2024-03-01</span>
+                    <button>수정하기</button>
+                    <button>삭제하기</button>
+                  </div>
+                  <div class="myWritedList">
+                    <p><a href="">춘천 남이섬</a></p>
+                    <span>2024-03-01</span>
+                    <button>수정하기</button>
+                    <button>삭제하기</button>
+                  </div>
+                  <div class="myWritedList">
+                    <p><a href="">춘천 남이섬</a></p>
+                    <span>2024-03-01</span>
+                    <button>수정하기</button>
+                    <button>삭제하기</button>
+                  </div>
+                  <div class="myWritedList">
+                    <p><a href="">춘천 남이섬</a></p>
+                    <span>2024-03-01</span>
+                    <button>수정하기</button>
+                    <button>삭제하기</button>
+                  </div>
+                  <div class="myWritedList">
+                    <p><a href="">춘천 남이섬</a></p>
+                    <span>2024-03-01</span>
+                    <button>수정하기</button>
+                    <button>삭제하기</button>
+                  </div>
+                </div>
+                <div id="myWritedPageList">
+                  <button>1</button>
+                </div>
+              </div>
+              <div id="saved" class="selectedArea">
+                <div id="savedListArea">
+                  <div class="savedList">
+                    <p><a href="">춘천 남이섬</a></p>
+                    <span>2024-03-01</span>
+                  </div>
+                  <div class="savedList">
+                    <p><a href="">춘천 남이섬</a></p>
+                    <span>2024-03-01</span>
+                  </div>
+                  <div class="savedList">
+                    <p><a href="">춘천 남이섬</a></p>
+                    <span>2024-03-01</span>
+                  </div>
+                  <div class="savedList">
+                    <p><a href="">춘천 남이섬</a></p>
+                    <span>2024-03-01</span>
+                  </div>
+                  <div class="savedList">
+                    <p><a href="">춘천 남이섬</a></p>
+                    <span>2024-03-01</span>
+                  </div>
+                </div>
+                <div id="savedPageList">
+                  <button>2</button>
+                </div>
+              </div>
+              <div id="receiveLike" class="selectedArea">
+                <div id="receiveLikeArea">
+                  <div class="receiveLikeList">
+                    <p><a href="">춘천 남이섬</a></p>
+                    <span>2024-03-01</span>
+                  </div>
+                  <div class="receiveLikeList">
+                    <p><a href="">춘천 남이섬</a></p>
+                    <span>2024-03-01</span>
+                  </div>
+                  <div class="receiveLikeList">
+                    <p><a href="">춘천 남이섬</a></p>
+                    <span>2024-03-01</span>
+                  </div>
+                  <div class="receiveLikeList">
+                    <p><a href="">춘천 남이섬</a></p>
+                    <span>2024-03-01</span>
+                  </div>
+                  <div class="receiveLikeList">
+                    <p><a href="">춘천 남이섬</a></p>
+                    <span>2024-03-01</span>
+                  </div>
+                </div>
+                <div id="receiveLikePageList">
+                  <button>3</button>
+              </div>
+              </div>
             </div>
             <div id="middle" class="content">
               <div class="gaga">
@@ -123,5 +210,6 @@
     </div>
   </div>
   <script src="https://kit.fontawesome.com/1e9b513c90.js" crossorigin="anonymous"></script>
+  <script src="/js/myPage.js"></script>
 </body>
 </html>
