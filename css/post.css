@@ -7,14 +7,16 @@
 }
 html,body{
 	height: 100%;
+  background-color: #000000;
+  
 }
 #review_box{
   height: 80px;
   width: 50%;
-  background-color: #ffffff;
+  background-color: #000000;
   text-align: center;
   line-height: 40px;
-  color:rgb(0, 0, 0);
+  color:rgb(255, 255, 255);
   letter-spacing: 10px;
   /* border: 1px solid #000000;; */
   font-size: 20px;
@@ -34,6 +36,7 @@ html,body{
   text-align: center;
   line-height: 70px;
   font-size: 40px;
+  color: #ffffff;
 }
 #writer{
   background-color: #ccc
