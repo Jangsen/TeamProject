@@ -29,35 +29,39 @@
               <div id="modifyProfile" class="selectedArea active">
                 <div id="profileImage">
                   <img src="img/default_profile.png" alt="프로필 이미지">
-                  <button>프로필 사진 변경</button>
+                  <button>프로필 사진<br>변경</button>
                 </div>
                 <!-- 프로필정보 수정부분에서 보여지는부분 하고 수정시 어떻게 보일지 생각필요 우선 임시로 작업 -->
                 <div id="profileInfo">
                   <form action="">
                     <ul>
                       <li>
-                        <label for="nickName">닉네임</label>
-                        <span>NickName</span>
-                        <input type="text" name="nickName" id="" value="닉네임을 입력하세요 (4~12글자)" maxlength="12" minlength="4">
-                        <button><i class="fa-solid fa-pen"></i></button>
+                        <label for="nickname">닉네임</label>
+                        <span id="showNickname">Nickname</span>
+                        <input type="text" id="nickname" class="hidden" placeholder="변경할 닉네임을 입력하세요 (4~12글자)" maxlength="12" minlength="4">
+                        <button type="button" id="modifyNickname" onclick="ModifyProfileBtn(0)"><i class="fa-solid fa-pen"></i></button>
+                        <button id="nicknameBtn" class="hidden">저장</button>
                       </li>
                       <li>
                         <label for="phoneNumber">전화번호</label>
-                        <span>010-0000-0000</span>
-                        <input type="text" name="" id="">
-                        <button><i class="fa-solid fa-pen"></i></button>
+                        <span id="showPhoneNumber">010-0000-0000</span>
+                        <input type="text" id="phoneNumber" class="hidden" placeholder="변경할 전화번호를 입력하세요">
+                        <button type="button" id="modifyPhoneNumber" onclick="ModifyProfileBtn(1)"><i class="fa-solid fa-pen"></i></button>
+                        <button id="phoneNumberBtn" class="hidden">저장</button>
                       </li>
                       <li>
                         <label for="address">주소</label>
-                        <span>xx시 xx구 xx동</span>
-                        <input type="text" name="" id="">
-                        <button><i class="fa-solid fa-pen"></i></button>
+                        <span id="showAddress">xx시 xx구 xx동</span>
+                        <input type="text" id="address" class="hidden" placeholder="변경할 주소를 입력하세요">
+                        <button type="button" id="modifyAddress" onclick="ModifyProfileBtn(2)"><i class="fa-solid fa-pen"></i></button>
+                        <button id="addressBtn" class="hidden">저장</button>
                       </li>
                       <li>
                         <label for="email">이메일</label>
-                        <span>abcdefg@gmail.com</span>
-                        <input type="email" name="" id="">
-                        <button><i class="fa-solid fa-pen"></i></button>
+                        <span id="showEmail">abcdefg@gmail.com</span>
+                        <input type="email" id="email" class="hidden" placeholder="변경할 이메일을 입력하세요">
+                        <button type="button" id="modifyEmail" onclick="ModifyProfileBtn(3)"><i class="fa-solid fa-pen"></i></button>
+                        <button id="emailBtn" class="hidden">저장</button>
                       </li>
                     </ul>
                   </form>
@@ -97,7 +101,9 @@
                   </div>
                 </div>
                 <div id="myWritedPageList">
+                  <button>&lt;</button>
                   <button>1</button>
+                  <button>&gt;</button>
                 </div>
               </div>
               <div id="saved" class="selectedArea">
@@ -124,7 +130,9 @@
                   </div>
                 </div>
                 <div id="savedPageList">
+                  <button>&lt;</button>
                   <button>2</button>
+                  <button>&gt;</button>
                 </div>
               </div>
               <div id="receiveLike" class="selectedArea">
@@ -151,7 +159,9 @@
                   </div>
                 </div>
                 <div id="receiveLikePageList">
+                  <button>&lt;</button>
                   <button>3</button>
+                  <button>&gt;</button>
               </div>
               </div>
             </div>
