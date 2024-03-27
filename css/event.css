@@ -1,10 +1,9 @@
-@font-face {
-  src: url(../font/Jalnan2/Jalnan2TTF.ttf);
-  font-family:"tae";
+@font-face{
+  font-family: 'Jalnan';
+  src:url(../fonts/Jalnan2TTF.ttf) ;
 }
-#event{}
 *{
-  font-family: "tae";
+  font-family: "Jalnan";
 }
 
 html,body{
