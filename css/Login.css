@@ -14,18 +14,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30px;
   font-family: 'GmarketSans';
   font-weight: 600;
 }
 
 #login_main #top{
   height: 230px;
+  line-height: 230px;
 }
 
 #login_main #top h2{
   font-size: 40px;
-  margin-top: 95px;
   font-family: 'DMSerif';
   font-weight: 500;
 }
