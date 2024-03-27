@@ -10,7 +10,7 @@
   <header>
     <div class="left">
       <a href="">
-        <img src="img/user.png" alt="">
+        <img src="img/profile.png" alt="">
       </a>
       </div>
     <div class="center">
@@ -27,25 +27,29 @@
         <div class="pagename">가보자고</div>
         <div class="thema">
           <a href="">산</a>
+          <pre>| </pre>
           <a href="">시장</a>
+          <pre>| </pre>
           <a href="">테마파크</a>
+          <pre>| </pre>
           <a href="">카페</a>
+          <pre>| </pre>
           <a href="">문화</a>
         </div>
       </div>
       <div class="center">
-        <div><a href="">&lang;&nbsp;</a></div>
-        <div>
-          <div>강원</div>
+        <button class="prev-btn" onclick="prevCategory()">&lang;&nbsp;</button>
+        <div class="cate" id="cate">
+          <div class="list">강원</div>
           <div class="list">서울</div>
           <div class="list">인천</div>
           <div class="list">충북</div>
           <div class="list">충남</div>
           <div class="list">경북</div>
           <div class="list">경남</div>
-          <div class="list">강원</div>
+          <div class="list">제주</div>
         </div>
-        <div><a href="">&nbsp;&rang;</a></div>
+        <button class="next-btn" onclick="nextCategory()">&nbsp;&rang;</button>
       </div>
       <div class="right">
         <input type="text" placeholder="search">
@@ -63,9 +67,6 @@
       </div>
       <div class="right"><img id="image" src="img/seoulcafe1.png" alt=""></div>
     </div>
-    <script src="js/mouseover.js"></script>
+    <script src="js/GAXGA.js"></script>
   </body>
   </html>
-  
-  
-  
