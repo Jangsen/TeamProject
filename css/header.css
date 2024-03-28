@@ -18,13 +18,13 @@ header{
   z-index: 100;
   /* background-color: black; */
 }
-.mainP{
-  display: flex;
-}
 .element{
   width: 33%;
 }
 
+.mainP{
+  display: flex;
+}
 
 .mainP .element{
   width: 100%;

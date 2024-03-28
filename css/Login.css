@@ -122,6 +122,13 @@
 #login_main #bottom #agreement span:not(:last-child){
   border-right: 1px solid black;
 }
+#login_main #bottom #agreement a{
+  text-decoration-line: none;
+}
+#login_main #bottom #agreement a:visited{
+  color: black;
+}
+
 #login_main #bottom #info{
   height: 20%;
   font-family: 'GmarketSans';
