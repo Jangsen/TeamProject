@@ -195,22 +195,25 @@
       display: flex;
     }
     .subject .left{
-      flex: 1;
       display: flex;
+      flex: 1;
       flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      order: 2;
+      align-items: center;
       font-size: 30px;
-      font-family: 'GMARKETSANSM';
+      font-family: 'GMARKETSANSB';
+      overflow-y: auto;
+    }
+    ::-webkit-scrollbar {
+      display: none;
     }
     .subject .left a {
       width: 100%;
       text-align: center;
       flex-grow: 1;
-      padding-top: 25px;
       text-decoration-line: none;
       color: gray;
+      align-content: center;
+      padding: 30px 0px;
     }
     .subject .left a:hover {
       color: #fff;

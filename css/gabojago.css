@@ -53,7 +53,7 @@
     }
     header .center{
       align-self: center;
-      font-size: 30px;
+      font-size: 35px;
     }
     header .center a{
       color: #fff;
@@ -142,7 +142,7 @@
     }
     .intro .center .list {
       display: inline-block;
-      font-family: 'GMARKETSANSM';
+      font-family: 'GMARKETSANSB';
     }
     .intro .center button {
       text-decoration-line: none;
@@ -174,12 +174,13 @@
     } */
     .intro .right {
       display: flex;
-      justify-content: flex-end;
+      justify-content: end;
+      align-items: end;
       
     }
     .intro .right input {
-      margin-top: 120px;
-      width: 80%;
+      /* margin-top: 120px; */
+      width: 60%;
       height: 40px;
       background: transparent;
       color: #fff;
@@ -199,26 +200,24 @@
     }
     .subject .left{
       display: flex;
-      /* flex: 1; */
-      height: 100%;
-      width: 50%;
+      flex: 1;
       flex-direction: column;
-      /* align-items: center; */
-      /* align-content: space-between; */
+      align-items: center;
       font-size: 30px;
       font-family: 'GMARKETSANSB';
-      
+      overflow-y: auto;
+    }
+    ::-webkit-scrollbar {
+      display: none;
     }
     .subject .left a {
-      display: flex;
-      justify-content: center;
       width: 100%;
-      height: 14%;
       text-align: center;
-      /* flex-grow: 1; */
+      flex-grow: 1;
       text-decoration-line: none;
-      padding-top: 30px;
       color: gray;
+      align-content: center;
+      padding: 30px 0px;
     }
     .subject .left a:hover {
       color: #fff;
@@ -234,4 +233,5 @@
     .subject .right img{
       width: 100%;
       height: 100%;
+      border-radius: 10px;
     }
