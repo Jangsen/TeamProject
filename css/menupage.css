@@ -1,0 +1,15 @@
+
+.menuPage{
+  background-color: #063F3B;
+  font-family: 'GMARKETSANSL';
+  font-size: 72px;
+  width: 1920px;
+  height: 740px;
+
+}
+
+.menuPage #menuList{
+  font-style: normal;
+  list-style: none;
+  color: #FFFFFF;
+}
