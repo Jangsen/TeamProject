@@ -230,8 +230,8 @@ left: 90px;
 
 .page #insertP2{
 position: absolute;
-width: 1380px;
-height: 150px;
+width: 1300px;
+/* height: 150px; */
 top: 50%;
 left: 50%;
 transform: translate(-50%,-50%);
@@ -428,6 +428,11 @@ footer #policy{
 footer #footerImg{
   width: 100%;
   height: 338px;
+}
+footer #backtop{
+  text-align: right;
+  font-family: 'DMSerif';
+  font-weight: 400px;
 }
 footer Img{
   width: 100%;
