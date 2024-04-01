@@ -48,6 +48,9 @@
   padding: 0 30px;
   justify-content: space-between;
 }
+#middle .input_Area input:focus{
+  outline: none;
+}
 #middle .input_Area .first_Area{
   height: 45%;
   display: flex;
@@ -148,4 +151,11 @@
   font-size: 20px;
   font-family: 'GmarketSans';
   font-weight: 600;
+}
+
+#bottom #agreement a{
+  text-decoration-line: none;
+}
+#bottom #agreement a:visited{
+  color: black;
 }

@@ -17,6 +17,8 @@
   flex-direction: column;
   height: 100vh;
   align-items: center;
+  font-family: 'GmarketSans';
+  font-weight: 600;
 }
 
 #inner #membershipLogo{
@@ -56,6 +58,12 @@
   justify-content: center;
   margin: 0 0 40px 60px
 }
+#inner #form_content .line{
+  width: 350px;
+  height: 1px;
+  background-color: #9a9a9a;
+  margin-top: 14px;
+}
 #inner .inputs{
   display: flex;
   height: 60px;
@@ -67,6 +75,13 @@
   width: 100%;
   font-size: 16px;
   box-sizing: border-box;
+  margin-top: 16px;
+}
+#inner .inputs #postal{
+  margin-top: 0;
+}
+#inner .inputs #address{
+  margin-top: 0;
 }
 #inner .inputs input:focus{
   outline: none;
@@ -88,7 +103,9 @@
   flex-direction: column;
   width: 55%;
 }
-
+#inner #find_Address{
+  margin-bottom: 20px;
+}
 #inner #find_Address button{
   height: 30px;
   width: 90px;
@@ -120,10 +137,11 @@
   width: 100px;
   border: 1px solid #e3e3e3;
   border-radius: 8px;
+  margin: 0 20px
 }
 
 #inner #bottom{
-  height: 230px;
+  height: 180px;
   width: 500px;
   display: flex;
   flex-direction: column;
@@ -144,13 +162,6 @@
 #inner #bottom #agreement span:not(:last-child){
   border-right: 1px solid black;
 }
-#inner #bottom #agreement a{
-  text-decoration-line: none;
-}
-#inner #bottom #agreement a:visited{
-  color: black;
-}
-
 #inner #bottom #info{
   height: 20%;
   font-family: 'GmarketSans';
@@ -161,4 +172,11 @@
   font-size: 20px;
   font-family: 'GmarketSans';
   font-weight: 600;
+}
+
+#inner #bottom #agreement a{
+  text-decoration-line: none;
+}
+#inner #bottom #agreement a:visited{
+  color: black;
 }
