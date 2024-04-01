@@ -1,6 +1,22 @@
+
 @font-face{
   font-family: 'Jalnan';
-  src:url(../fonts/Jalnan2TTF.ttf) ;
+src:url(../fonts/Jalnan2TTF.ttf) ;
+}
+@font-face {
+  font-family: 'GmarketSans1';
+  src: url('../fonts/GmarketSansTTFBold.ttf') format('truetype');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'GmarketSans2';
+  src: url('../fonts/GmarketSansTTFMedium.ttf') format('truetype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'GmarketSans3';
+  src: url('../fonts/GmarketSansTTFLight.ttf') format('truetype');
+  font-weight: 400;
 }
 *{
   font-family: "Jalnan";
@@ -21,25 +37,27 @@ html,body{
   text-align: center;
   line-height: 70px;
   font-size: 40px;
+  background-color: #000000;
+  color: #ffffff;
 
 }
 .event_box {
     height: 80px;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.1);
-    background-color: #ffffff;
+    background-color: #000000;
     text-align: center;
     line-height: 40px;
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
     letter-spacing: 10px;
     border-top:1px #000000;
     border-top: 1px solid #000000;
-    border-bottom: 1px solid #000000;;
+    border-bottom: 1px solid #ffffff;;
     font-size: 20px;
 }
 .image_box{
   height: 725px;
   width: 70%;
-    background-color: #d4d9dd;
+    background-color: #000000;
     text-align: center;
     line-height: 70px;
     color:rgb(0, 0, 0);
@@ -89,14 +107,18 @@ html,body{
   height: 70px;
   width: 50%;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.1);
-    background-color: #ffffff;
     text-align: center;
     line-height: 75px;
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
     float:left;
-    font-size: 35px;
+    font-size: 30px;
     letter-spacing: 3px;
+    background-color: #000000;
+    border-right: 1px solid #ffffff;;
 
+}
+.ingEvent_box{
+  display: flex;
 }
 .ingEvent:hover{
   filter:brightness(0.5);
@@ -106,12 +128,12 @@ html,body{
   height: 70px;
   width: 50%;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.1);
-    background-color: #ffffff;
+    background-color: #000000;
     text-align: center;
     line-height: 75px;
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
     float:left;
-    font-size: 35px;
+    font-size: 30px;
     letter-spacing: 3px;
 }
 .exit_event:hover{
