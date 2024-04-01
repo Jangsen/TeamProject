@@ -70,10 +70,7 @@ header{
   margin-left: 2%;
   /* margin-right: 2%; */
 }
-.post{
-  width: 95%;
-  height: 95%;
-}
+
 .title{
   display: flex;
   flex-direction: column;
@@ -304,32 +301,41 @@ input[type="button"]{
 .image-box{
   width: 50%;
   height: 50%;
-  /* border: 1px dotted #000000; */
+  border: 1px dotted #000000;
   text-align: center;
   font-size: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 30px;
 }
 .text-box{
   width: 100%;
   height: 30%;
-  /* border: 1px dotted #000000; */
-  /* text-align: center; */
+  border: 1px dotted #000000;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
   font-size: 25px;
   font-family: "GmarketSans3";
   color: #6A6A6A;
+  margin-bottom: 30px;
 }
 .comment-container{
   margin-top: 30px;
-  width: 100%;
+  width: 98%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px black dotted;
 }
 .comment-input{
   display:flex;
   margin-bottom: 10px;
+}
+.input-box{
+  width: 100%;
 }
 .comment-input input[type="text"]{
   flex-grow: 1;
@@ -348,15 +354,37 @@ input[type="button"]{
   cursor: pointer;
 }
 .comment-list{
-  list-style-type: none;
-  padding:0;
-  float: right;
+  width: 100%;
+  height: 20%;
+  border-bottom: #000000 1px dotted;
+  display: flex;
+  flex-direction: row;
+}
+.nickname-box{
+  width: 30%;
+  border-right: #000000 1px dotted;
+  display: flex;
+  flex-direction: column;
+}
+.comment-date{
+  width: 100%;
+}
+.nickname{
+  width: 100%;
+}
+.comment-text{
+  width: 70%;
+}
+.comment-list-box{
+  width: 100%;
+  height: 200px;
+  /* border: 1px #000000 ridge; */
 }
 .comment-name{
   float: left;
   
 }
-.commetn-item{
+.comment-item{
   margin-bottom: 10px;
 }
 .main-box{
