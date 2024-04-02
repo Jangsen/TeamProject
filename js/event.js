@@ -5,7 +5,7 @@
   const image_box3 = document.querySelector(".side_image3");
 
   image_box1.addEventListener("mouseover", function(){
-    change_image.src="../img/1.png"
+    change_image.src="../img/청룡.png"
   });
   image_box2.addEventListener("mouseenter", function(){
     change_image.src="../img/2.png"

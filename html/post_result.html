@@ -5,36 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" type="text/css" href="../css/post_result2.css">
-  <style>
-
-  </style>
 </head>
 <body>
   <header>GA X GA</header>
   <div class="wrap">
     <div class="post-box">
-      <div class="title">가봤다고</div>
+      <div class="title">&nbsp;&nbsp;&nbsp;가봤다고</div>
       <div class="profile">
         <div class="profile-top">
           <div class="profile-image">
             <img src="../img/profile1.png">
           </div>
           <div class="profile-list">
-            <div class="profile-list-num">
+            <a href="#" class="profile-list-num">
               김태인님의 게시글1
-            </div>
+            </a>
             <div class="profile-list-num">김태인님의 게시글2</div>
             <div class="profile-list-num">김태인님의 게시글3</div>
             <div class="profile-list-num">김태인님의 게시글4</div>
           </div>
         </div>
         <div class="profile-bottom">
-          <div class="info-name">&nbsp;김태인</div>
-          <div class="info-email">&nbsp;taein111@naver.com</div>
+          <div class="info-name"><pre>       김태인</pre></div>
+          <div class="info-email"><pre>           taein111@naver.com</pre></div>
         </div>
       </div>
       <div class="intro">김태인님! 비슷한 여행지를 추천드려요</div>
       <div class="review-list-box">
+        <div class="review-list">
+          <div class="review-image">
+            <img src="../img/wolmido.png">
+          </div>
+          <div class="review-info">
+            <div class="review-name"><a href="#">월미도</a></div>
+            <div class="review-add"><a href="#">안산시 단원구 와동 황금길</a></div>
+          </div>
+        </div>
         <div class="review-list">
           <div class="review-image">
             <img src="../img/wolmido.png">
@@ -102,9 +108,9 @@
     </div>
     <div class="post-result">
       <div class="title-box">
-      <div class="post-title"><span>인천 월미도 방문 후기 !!</span>
-      </div>
-    </div>      
+        <div class="post-title">인천 월미도 방문 후기 !!
+        </div>
+      </div>      
       <div class="post-info">
         <div class="date">
           게시날짜 : 2024/03/28
@@ -119,26 +125,85 @@
       </div> 
       <div class="main-box">  
         <div class="image-box">
-        image box
+          IMAGE BOX
+          <!-- <img src="../img/hangugminsogchon.png"> -->
         </div>    
         <div class="text-box">
-          text box
+          TEXT BOX
         </div>
+        <label>위치</label>
         <div id="map"></div>
+
         <div class="comment-container">
           <h3>댓글</h3>
+          <div class="input-box">
           <form class="comment-input">
-            <input style ="width: 30%;" id="client" type ="text" maxlength="10" placeholder="닉네임">
-            <input style ="width: 70%;" id="comment" type ="text" placeholder="댓글을 입력하세요">
+            <input style ="width: 20%;" id="client" type ="text" maxlength="10" placeholder="닉네임">
+            <input style ="width: 80%;" id="comment" type ="text" placeholder="댓글을 입력하세요">
             <input id="comment-save" type="submit" value="댓글 작성">
+            </div>
+            <div class="comment-list">
+              <div class="nickname-box">
+                <div class="nickname">김태인</div>
+                <div class="comment-date">2024-04-01</div>
+              </div>
+              <div class="comment-text">오와와와와와와와와와</div>
+            </div>
+            <div class="comment-list">
+              <div class="nickname-box">
+                <div class="nickname">김태인</div>
+                <div class="comment-date">2024-04-01</div>
+              </div>
+            <div class="comment-text">오와와와와와와와와와
+              </div>
+            </div>
+            <div class="comment-list">
+              <div class="nickname-box">
+                <div class="nickname">hacker j</div>
+                <div class="comment-date">2024-04-01</div>
+              </div>
+            <div class="comment-text">밖에 너무시끄럽다 진짜
+              </div>
+            </div>
+            <!-- <div class="comment-list">
+              <div class="nickname-box">
+                <div class="comment-date">2024-04-01</div>
+                <div class="nickname">hacker J</div>
+              </div>
+              <div class="comment-text">밖에너무시끄러워 진짜</div>
+            </div> -->
+          </div>
           </form>
-          <ul class="comment-list">
-          </ul>
-        </div>
+          <div class="comment-list-box">
+          
+          <!-- <ul class="comment-list">
+          </ul> -->
+        
         </div>
       </div>
-      </div>
-    </div>
-    <script src="../js/post_result.js"></script>
+  </div>
+  </div>
+</div>
+<script src="../js/post_result.js"></script>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6d7e2f086ffa97eb8f4b35fa8cc12439"></script>
+<script>
+  //----------------------------------------------------------------------지도
+var mapContainer = document.getElementById('map'), // 
+        mapOption = {
+            center: new kakao.maps.LatLng(37.537187, 127.005476), // 지도의 중심좌표
+            level: 5 // 지도의 확대 레벨
+        };
+//----------------------------------------------------------------------지도
+    //지도를 미리 생성
+    var map = new kakao.maps.Map(mapContainer, mapOption);
+    // 주소-좌표 변환 객체를 생성
+    // var geocoder = new daum.maps.services.Geocoder();
+    // 마커를 미리 생성
+    // var marker = new daum.maps.Marker({
+    //     position: new daum.maps.LatLng(37.537187, 127.005476),
+    //     map: map
+    // });
+
+</script>
 </body>
 </html>

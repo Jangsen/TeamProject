@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="../css/post2.css">
+  <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6d7e2f086ffa97eb8f4b35fa8cc12439&libraries=services"></script>
+<script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+</head>
+<body>
+  <header>GA X GA</header>
+  <div class="wrap">
+    <div class="post-box">
+      <div class="title">&nbsp;&nbsp;&nbsp;가봤다고</div>
+      <div class="profile">
+        <div class="profile-top">
+          <div class="profile-image">
+            <img src="../img/profile1.png">
+          </div>
+          <div class="profile-list">
+            <a href="#" class="profile-list-num">
+              김태인님의 게시글1
+            </a>
+            <div class="profile-list-num">김태인님의 게시글2</div>
+            <div class="profile-list-num">김태인님의 게시글3</div>
+            <div class="profile-list-num">김태인님의 게시글4</div>
+          </div>
+        </div>
+        <div class="profile-bottom">
+          <div class="info-name"><pre>       김태인</pre></div>
+          <div class="info-email"><pre>           taein111@naver.com</pre></div>
+        </div>
+      </div>
+      <div class="intro">김태인님! 후기 작성하고 선물받아가세요!</div>
+      <div class="review-list-box">
+        <div class="event-list">
+          </div>
+        
+      </div>
+    </div>
+    <div class="post-result">
+      <div class="review-title">
+        <span><h1>후기 게시글 작성</h1></span>
+      </div>
+      <form>
+        <div class="review-name">
+          <input style ="width: 100%;height: 100%;background-color: #c5c3c3; border-radius: 15px;
+          font-size: 30px; border: none;" name="title" type ="text" maxlength="40" placeholder="제목을 입력하세요">
+        </div>
+        <div class="select">
+          <div class="local" style="width: 15%;">
+            <label>지역 선택 :</label>
+        <select>
+          <option>서울</option>
+          <option>경기</option>
+          <option>강원</option>
+          <option>충북</option>
+          <option>충남</option>
+          <option>경북</option>
+          <option>경남</option>
+        </select>
+          </div>
+          <div class="tema" style="width: 15%";>
+            <label>테마 선택:</label>
+        <select>
+          <option>산</option>
+          <option>축제</option>
+          <option>카페</option>
+          <option>맛집</option>
+          <option>바다</option>
+        </select>
+          </div>
+          <div class="date" style="width: 70%; text-align: right";>
+            작성날짜 : 2024-03-29
+          </div>
+        </div>
+      <div class="file-area">
+        <div class="file-input" style="width: 50%;">
+        <label for="image">사진 첨부 :</label>
+      <input type="file" id="fileInput" multiple accept="image/*">
+        </div>
+        <div class="writer" style="width: 50%; text-align: right;" >
+          작성자 : 홍길동
+        </div>
+      </div> 
+      <div>
+        <!-- <label for="content">내용 : </label><br> -->
+        <textarea class="textarea" name="content" id="content" cols="130" rows="20" placeholder="내용을 입력해주세요"></textarea>
+      </div>
+      <label for="address">여행지 주소:</label>
+      <input type="button" onclick="sample5_execDaumPostcode()" value="주소 검색">
+        <input type="text" id="sample5_address" size="50" name="naddr" placeholder="주소">	
+<input type="text" id="sample5_detailAddress" size="50" placeholder="상세주소">
+      <div id="map"></div> <br />
+      <div>
+      <input style="float: right;" type="submit" value="게시하기">
+      </form>
+  </div>
+  </div>
+</div>
+<script src="../js/post.js">
+</script>
+</body>
+</html>
