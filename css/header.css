@@ -18,7 +18,7 @@ header{
   z-index: 100;
   /* background-color: black; */
 }
-.element{
+.element1{
   width: 33%;
 }
 
@@ -26,7 +26,7 @@ header{
   display: flex;
 }
 
-.mainP .element{
+.mainP .element1{
   width: 100%;
 }
 .mainP #profile {
@@ -46,7 +46,7 @@ header{
   text-align: right;
   padding-right: 30px;
 }
-.menutap{
+#menutap{
   font-family: 'DMSerif';
   font-weight: 500;
   font-size: 30px;
@@ -55,6 +55,7 @@ header{
   list-style: none;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 
 }
 #menutap .element{
@@ -63,18 +64,104 @@ header{
 .mainP #menu ul{
   display: none;
 
-	}
-	#menutap > ul >li  {
-		width:130px;
-		display: flex;
-		position: absolute;
-		font-size:14px;
-		background: rgb(4, 39, 238);
-	}
-	#menutap > ul > li:hover > li {
-		display : block;
-	}
+}
+#menutap > ul >li  {
+	width:130px;
+	display: flex;
+	position: absolute;
+  font-size:14px;
+  background: rgb(4, 39, 238);
+}
+#menutap > ul > li:hover > li {
+	display : block;	
+}
 
+
+.menuTapPage{
+  display: none;
+  background-color: #000000;
+  width: 100%;
+  height: 100%;
+}
+.menuPage{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #063F3B;
+  width: 100%;
+  height: 760px;
+}
+.companyContents{
+  display: flex;
+  font-family: 'GmarketSans';
+  font-weight: 400;
+  width: 100%;
+  height: 95%;
+}
+.companyContents #companyInfo{
+  letter-spacing : 4px;
+  text-align: right;
+  font-size: 25px;
+  color: #CDCBCB;
+}
+.companyContents #socialShare img {
+  width: 376PX;
+  height: 55px;
+  margin: 10px;
+}
+.menu {
+  font-family: 'GmarketSans';
+  font-weight: 400;
+  width: 50%;
+  font-size: 72px;
+  list-style-type: none;
+  color: #FFFFFF;
+}
+.menu ul {
+  list-style-type: none;
+  
+}
+.menu ul li {
+  margin: 20px 0px;
+}
+.menu ul li a {
+  text-decoration-line: none;
+  
+}
+.menu ul li a:visited{
+  color: #FFFFFF;
+  
+}
+#rightContent {
+  width: 50%;
+  text-align: right;
+  margin-right: 60px;
+  margin-top: 390px;
+}
+
+.menuTapPage #policy {
+  font-family: 'GmarketSans';
+  font-size: 25px;
+  width: 100%;
+  height: 10%;
+  list-style: none;
+  list-style-type: none;
+  color: #CDCBCB;
+  text-align: center;
+}
+#policy ul li {
+  list-style-type: none;
+  display: inline;
+  
+}
+#policy ul li a {
+  text-decoration-line: none;
+  
+}
+#policy ul li a:visited{
+  color: #FFFFFF;
+
+}
 video {
   position :absolute;
   top : 0;
@@ -362,48 +449,7 @@ height: 20px;
 top: 80px;
 right: 90px;
 }
-/* footer{
-height: 100vh;
-width: 100%;
-position: relative;
-background-color: #063F3B;
-}
-footer #inform1{
-  position: relative;
-  font-family: 'GMARKETSANSL';
-  font-size: 25px;
-  top: 230px;
-  color: #CDCBCB;
-}
-footer #policy{
-position: relative;
-font-family: 'DM Serif Display';
-font-size: 25px;
-color: #CDCBCB;
-top: 250px;
-text-align: center;
-}
-footer #backtop{
-position: relative;
-font-family: 'DM Serif Display';
-font-size: 23px;
-color: #CDCBCB;
-top: 100px;
-text-align: right;
-}
 
-footer #mainP{
-position: relative;
-bottom: 0;
-text-align: center;
-font-family: 'DM Serif Display';
-font-weight: 400;
-font-size: 350px;
-line-height: 400px;
-color: #FFFFFF;
-padding-top:160PX;
-padding-bottom:0px;
-} */
 footer{
   background-color: #063F3B;
 }
