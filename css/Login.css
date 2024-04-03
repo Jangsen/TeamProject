@@ -7,8 +7,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'GmarketSans';
-  font-weight: 600;
+  /* font-family: 'GmarketSans';
+  font-weight: 600; */
 }
 
 #login_main #top{
@@ -20,7 +20,10 @@ margin: 40px;
   font-weight: 600;
   font-size: 40px;
 }
-
+#login_main #top a{
+  text-decoration-line: none;
+  color: #000000;
+}
 #login_main #middle{
   width: 550px;
   border: 1px solid;
@@ -64,7 +67,7 @@ margin: 40px;
   border-radius: 5px;
   font-size: 20px;
   font-family: 'GmarketSans';
-  font-weight: 600;
+  font-weight: 400;
   background-color: #d9d9d9;
   padding-left: 7px;
 }
@@ -77,17 +80,19 @@ margin: 40px;
   width: 100%;
   text-align: center;
   margin: 40px 0 65px;
+  font-family: 'GmarketSans';
+  font-weight: 500;
   color: #6b6b6b;
 }
 
 #login_main #middle #btn{
   height: 85px;
   width: 470px;
-  font-family: 'GmarketSans';
-  font-weight: 600;
-  background-color: #fecbcb;
+  font-family: 'Jalnan';
+  background-color: #063F3B;
   font-size: 25px;
-  color: #a9a9a9;
+  color: #FFFFFF;
+  border-radius: 8px;
 }
 #login_main #middle #findInfo{
   height: 60px;
@@ -95,6 +100,9 @@ margin: 40px;
   display: flex;
   justify-content: center;
   margin: 80px 0 10px 0;
+  padding-right: 50px;
+  font-family: 'GmarketSans';
+  font-weight: 400;
 }
 #login_main #middle #findInfo .line{
   background-color: #a9a9a9;
@@ -121,6 +129,8 @@ margin: 40px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: 'GmarketSans';
+  font-weight: 500;
 }
 #login_main #bottom #agreement{
   width: 100%;

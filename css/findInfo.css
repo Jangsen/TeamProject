@@ -7,8 +7,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'GmarketSans';
-  font-weight: 600;
+  /* font-family: 'GmarketSans';
+  font-weight: 600; */
   height: 100vh;
 }
 
@@ -21,6 +21,10 @@
   font-size: 40px;
   font-family: 'GmarketSans';
   font-weight: 600;
+}
+#top a{
+  text-decoration-line: none;
+  color: #000000;
 }
 #top p{
   font-size: 40px;
@@ -56,6 +60,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: 'GmarketSans';
+  font-weight: 600;
 }
 #middle .input_Area .first_Area div:first-child{
   background-color: #d9d9d9;
@@ -81,6 +87,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: 'GmarketSans';
+  font-weight: 600;
 }
 #middle .input_Area .second_Area div:first-child{
   background-color: #d9d9d9;
@@ -111,13 +119,12 @@
 #middle .btn_Area input{
   width: 100%;
   height: 100%;
+  font-family:'Jalnan';
   font-size: 16px;
-  font-family: 'GmarketSans';
-  font-weight: 600;
   border: 1px solid black;
-  background-color: #FECBCB;
+  background-color: #063F3B;
   border-radius: 5px;
-  color: #a9a9a9;
+  color: #FFFFFF;
 }
 #bottom{
   height: 180px;
@@ -128,12 +135,15 @@
   justify-content: center;
 }
 #bottom #agreement{
+  
   width: 100%;
   display: flex;
   text-align: center;
   font-size: 12px;
   height: 20%;
   align-items: center;
+  font-family: 'GmarketSans';
+  font-weight: 500;
 }
 #bottom #agreement span{
   width: 33%;
@@ -143,8 +153,6 @@
 }
 #bottom #info{
   height: 20%;
-  font-family: 'GmarketSans';
-  font-weight: 500;
   font-size: 12px;
 }
 #bottom #info b{
