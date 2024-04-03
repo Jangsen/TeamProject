@@ -18,7 +18,7 @@ header{
   z-index: 100;
   /* background-color: black; */
 }
-.element1{
+.element{
   width: 33%;
 }
 
@@ -42,9 +42,12 @@ header{
   text-align: center;
   color: #FFFFFF;
 }
-.element #menu{
+#elementMenu {
   text-align: right;
   padding-right: 30px;
+
+
+
 }
 #menutap{
   font-family: 'DMSerif';
@@ -58,33 +61,17 @@ header{
   cursor: pointer;
 
 }
-#menutap .element{
-  text-align: center;
-}
-.mainP #menu ul{
-  display: none;
 
-}
-#menutap > ul >li  {
-	width:130px;
-	display: flex;
-	position: absolute;
-  font-size:14px;
-  background: rgb(4, 39, 238);
-}
-#menutap > ul > li:hover > li {
-	display : block;	
-}
-
-
-.menuTapPage{
-  display: none;
-  background-color: #000000;
+#menuTapPage{
+  background-color: black;
   width: 100%;
   height: 100%;
+  position :absolute;
+  top : 100px;
+  left: 0;
+  display: none;
 }
 .menuPage{
-  position: relative;
   display: flex;
   flex-direction: column;
   background-color: #063F3B;
@@ -115,7 +102,9 @@ header{
   width: 50%;
   font-size: 72px;
   list-style-type: none;
-  color: #FFFFFF;
+  color: #063F3B;
+  text-align: left;
+  margin-left: 60px;
 }
 .menu ul {
   list-style-type: none;
@@ -129,24 +118,22 @@ header{
   
 }
 .menu ul li a:visited{
-  color: #FFFFFF;
+  color: #CDCBCB;
   
 }
 #rightContent {
   width: 50%;
   text-align: right;
   margin-right: 60px;
-  margin-top: 390px;
+  margin-top: 320px;
 }
 
-.menuTapPage #policy {
+#policy {
   font-family: 'GmarketSans';
   font-size: 25px;
   width: 100%;
   height: 10%;
   list-style: none;
-  list-style-type: none;
-  color: #CDCBCB;
   text-align: center;
 }
 #policy ul li {
@@ -155,13 +142,34 @@ header{
   
 }
 #policy ul li a {
+  color: #CDCBCB;
   text-decoration-line: none;
   
 }
 #policy ul li a:visited{
-  color: #FFFFFF;
+  color: #CDCBCB;
 
 }
+/* #menutap .element{
+  text-align: center;
+}
+.mainP #menu ul{
+  display: none;
+
+}
+#menutap > ul >li  {
+	width:130px;
+	display: flex;
+	position: absolute;
+  font-size:14px;
+  background: rgb(4, 39, 238);
+}
+#menutap > ul > li:hover > li {
+	display : block;	
+} */
+
+
+
 video {
   position :absolute;
   top : 0;
