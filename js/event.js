@@ -8,7 +8,7 @@
 
 
 
-// 마우스 오버되면 상세보기 끄기 / 이미지 바꾸기
+// 마우스 오버되면 상세보기 끄기 / 이미지 바꾸기.
   image_box1.addEventListener("mouseover", function(){
     change_image.src="../img/청룡.png"
     const num = 1;
