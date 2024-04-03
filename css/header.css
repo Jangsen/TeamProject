@@ -40,9 +40,16 @@ header{
   font-family: 'DMSerif';
   font-weight: 500;
   font-size: 35px;
-  color: white;
   text-align: center;
   color: #FFFFFF;
+}
+#logo a {
+  text-decoration-line: none;
+  
+}
+#logo a:visited{
+  color: white;
+  
 }
 #elementMenu {
   text-align: right;
