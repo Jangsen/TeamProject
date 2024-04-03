@@ -1,4 +1,6 @@
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: black;
 }
@@ -64,8 +66,9 @@ header{
 
 #menuTapPage{
   background-color: black;
-  width: 100%;
-  height: 100%;
+  
+  width: 1920px;
+  height: 1080px;
   position :absolute;
   top : 100px;
   left: 0;
@@ -76,7 +79,7 @@ header{
   flex-direction: column;
   background-color: #063F3B;
   width: 100%;
-  height: 760px;
+  height: 600px;
 }
 .companyContents{
   display: flex;
