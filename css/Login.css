@@ -7,8 +7,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* font-family: 'GmarketSans';
-  font-weight: 600; */
+
 }
 
 #login_main #top{
@@ -16,18 +15,18 @@ margin: 40px;
 }
 
 #login_main #top h2{
-  font-family: 'GmarketSans';
-  font-weight: 600;
-  font-size: 40px;
+  font-family: 'DMSerif';
+  font-weight: 500;
+  font-size: 60px;
 }
 #login_main #top a{
   text-decoration-line: none;
-  color: #000000;
+  color: black;
 }
 #login_main #middle{
   width: 550px;
-  border: 1px solid;
   border-radius: 5%;
+  box-shadow : 0px 3px 5px 0px #989898
 }
 
 #login_main #middle h3{
@@ -63,12 +62,13 @@ margin: 40px;
 }
 #login_main #middle #login_area div input{
   width: 70%;
+  height: 70%;
+  text-align: justify;
   border: 1px solid #d9d9d9;
   border-radius: 5px;
   font-size: 20px;
   font-family: 'GmarketSans';
   font-weight: 400;
-  background-color: #d9d9d9;
   padding-left: 7px;
 }
 #login_main #middle #login_area div input:focus{
@@ -101,8 +101,6 @@ margin: 40px;
   justify-content: center;
   margin: 80px 0 10px 0;
   padding-right: 50px;
-  font-family: 'GmarketSans';
-  font-weight: 400;
 }
 #login_main #middle #findInfo .line{
   background-color: #a9a9a9;
@@ -118,7 +116,7 @@ margin: 40px;
   background-color: white;
   cursor: pointer;
   font-family: 'GmarketSans';
-  font-weight: 600;
+  font-weight: 500;
   color: #a9a9a9;
 }
 
