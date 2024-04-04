@@ -37,7 +37,7 @@
     font-weight: 500;
   }
   header .center a:hover{
-    color: #2C3161;
+    color: #063F3B;
   }
 
   header .right{
@@ -53,7 +53,7 @@
     font-family: 'GMARKETSANSM';
   }
   header .right a:hover{
-    color: #2C3161;
+    color: #063F3B;
   }
   #area-No0{
     display: flex;
@@ -88,10 +88,9 @@
     font-weight: 600;
     font-size: 90px;
     color: #EFEFEF;
-    
   }
   #pageNameGabojago a:hover{
-    color: #2C3161;
+    color: #063F3B;
   }
   #area-No1-1 h1{
     color: #A1A1A1;
@@ -247,7 +246,7 @@
     color: #fff;
   }
   #icons a:hover{
-    color: #063F3B ;
+    color: #063F3B;
   }
   #instagram{
 
@@ -263,4 +262,18 @@
   }
   #icons li{
     margin: 4px 6px;
+  }
+
+  @media (max-width: 770px){
+    #pageNameGabojago a{
+  
+      font-size: 70px;
+    }
+  }
+  @media (max-width: 368px){
+    #pageNameGabojago a{
+  
+      font-size: 45px;
+
+    }
   }
