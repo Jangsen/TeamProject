@@ -11,7 +11,7 @@
       const cmt = document.createElement("li");
       cmt.innerHTML = `
       ${client.value} - ${comment.value}
-      <span class="delButton"> 삭제</span>
+      <span class="delButton" style="cursor:pointer">삭제</span>
       `;
       comment_list.appendChild(cmt);
 
@@ -31,43 +31,99 @@ for (let delButton of delButtons) {
   });
 }
 });
+// 이미지 슬라이드
 
-//좋아요 스크립트 --------------
-let likeBtn = document.getElementById('likeBtn');
-let likeCount = document.getElementById('likeCount');
-let isLiked = false;
-let likes = 0;
+let images = [
+  "../img/apsan.png",
+  "../img/botanicgarden.png",
+  "../img/tteokbokkitown.png",
+  "../img/seongdangmos.png",
+  "../img/sinposijang.png"
+];
 
-likeBtn.addEventListener('click', function() {
-  if (!isLiked) {
-    isLiked = true;
-    likes++;
-    likeBtn.style.backgroundColor = '#dc3545';
-    likeBtn.textContent = '좋아요 취소';
-  } else {
-    isLiked = false;
-    likes--;
-    likeBtn.style.backgroundColor = '#007bff';
-    likeBtn.textContent = '좋아요';
-  }
-  likeCount.textContent = likes;
-});
+function imageSlider(parent, images){
+  let currentIndex = 0;
 
-var mapContainer = document.getElementById('map'), // 지도를 표시할 div
-mapOption = {
-    center: new daum.maps.LatLng(37.537187, 127.005476), // 지도의 중심좌표
-    level: 5 // 지도의 확대 레벨
+  // 선택자
+  let slider = {
+      parent: parent,
+      images: parent.querySelector(".slider__img"),
+      thumbnails: parent.querySelector(".slider__thumb"),
+      prevBtn: parent.querySelector(".slider__btn .prev"),
+      nextBtn: parent.querySelector(".slider__btn .next")
+  };
+
+  // 이미지 출력하기
+  slider.images.innerHTML = images.map((image, index) => {
+      return `<img src="${image}" alt="이미지${index}">`;
+  }).join("");
+
+  // 이미지 활성화(active)하기
+  let imageNodes = slider.images.querySelectorAll("img");
+  imageNodes[currentIndex].classList.add("active");
+
+
+  // 썸네일 이미지 출력하기
+  slider.thumbnails.innerHTML = slider.images.innerHTML;
+
+  // 썸네일 활성화(active)하기
+  let thumnailNodes = slider.thumbnails.querySelectorAll("img");
+  thumnailNodes[currentIndex].classList.add("active");
+
+  // 썸네일 이미지 클릭하기_for문
+  // for(let i=0; i<thumnailNodes.length; i++){
+  //     thumnailNodes[i].addEventListener("click", function(){      //this값을 가져올 수 있음
+  //         slider.thumbnails.querySelector("img.active").classList.remove("active");
+  //         thumnailNodes[i].classList.add("active");
+
+  //         imageNodes[currentIndex].classList.remove("active");
+  //         currentIndex = i;
+  //         imageNodes[currentIndex].classList.add("active");
+  //     });
+  // }
+  
+  // 썸네일 이미지 클릭하기_forEach()
+  thumnailNodes.forEach((thumb, index) => {
+      thumb.addEventListener("click", function(){
+          thumnailNodes[currentIndex].classList.remove("active");
+          thumnailNodes[index].classList.add("active");
+
+          imageNodes[currentIndex].classList.remove("active");
+          currentIndex = index;
+          imageNodes[currentIndex].classList.add("active");
+      });
+  });
+
+  // 왼쪽 버튼 클릭하기
+  slider.prevBtn.addEventListener("click", () => {
+      imageNodes[currentIndex].classList.remove("active");
+      currentIndex--;
+      
+      // 0 4 3 2 1 0 4 3 2 1...
+      if(currentIndex < 0) currentIndex = images.length - 1;
+
+      imageNodes[currentIndex].classList.add("active");
+
+      // 썸네일 버튼 클릭하기
+      thumnailNodes[currentIndex].classList.remove("active");
+      thumnailNodes[currentIndex].classList.add("active");
+  });
+
+  // 오른쪽 버튼 클릭하기
+  slider.nextBtn.addEventListener("click", () => {
+      imageNodes[currentIndex].classList.remove("active");
+      thumnailNodes[currentIndex].classList.remove("active");
+
+      // 1 2 3 4 0 1 2 3 4...
+      currentIndex = (currentIndex + 1) % images.length;
+
+      imageNodes[currentIndex].classList.add("active");
+      thumnailNodes[currentIndex].classList.add("active");
+
+      
+  });
+
+  
 };
-//----------------------------------------------------------------------지도
-//지도를 미리 생성
-var map = new daum.maps.Map(mapContainer, mapOption);
-//주소-좌표 변환 객체를 생성
-var geocoder = new daum.maps.services.Geocoder();
-//마커를 미리 생성
-var marker = new daum.maps.Marker({
-position: new daum.maps.LatLng(37.537187, 127.005476),
-map: map
-});
 
-
-
+imageSlider(document.querySelector(".slider__wrap"), images);
