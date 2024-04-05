@@ -50,7 +50,7 @@
 
 // 마우스 오버되면 상세보기 끄기 / 이미지 바꾸기
   image_box1.addEventListener("mouseover", function(){
-    change_image.src="../img/청룡.png"
+    change_image.src="../img/진행중 이벤트 최종1.png"
     mydiv2.style.visibility = "hidden"
     mydiv3.style.visibility = "hidden"
     //마우스 오버 시 div 클래스 변경
@@ -60,7 +60,7 @@
     
   });
   image_box2.addEventListener("mouseover", function(){
-    change_image.src="../img/영수증 이벤트.png"
+    change_image.src="../img/진행중 이벤트 최종2.png"
     //마우스오버 상세정보 사라지기
     mydiv1.style.visibility = "hidden"
     mydiv3.style.visibility = "hidden"
@@ -71,7 +71,7 @@
     button3.style.visibility ="hidden"
   });
   image_box3.addEventListener("mouseenter", function(){
-    change_image.src="../img/3.png"
+    change_image.src="../img/진행중 이벤트 최종3.png"
     
     //마우스오버 상세정보 사라지기
     mydiv1.style.visibility = "hidden"

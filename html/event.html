@@ -5,10 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" type="text/css" href="../css/EVENT.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/Fonts.css">
 </head>
 <body>
   <div id="wrap" class="wrap">
-    <header class="header">GA X GA</header>
+    <header style="background-color: black;" class = "mainP" id="mainPColor">
+      <div id="profile" class="element">
+        <a href="../html/loginPage.html">
+          <img src="../img/profile.png" width=45px height=45px  alt="프로필">
+        </a>
+      </div>
+    <div id="logo" class="element" width= 45px height=45px>
+      <h1><a href="../html/main.html">GAXGA</a></h1>
+    </div>
+
+    <div class="element" id="elementMenu">
+      <button id="menutap" onclick="activeTab()" >MENU</button>
+      <div id="menuTapPage">
+        <div class="menuPage">
+          <div class="companyContents">
+            <div class="menu">
+              <nav>
+                <ul>
+                  <li><a href="../html/main.html">HOME</a></li>
+                  <li><a href="../html/gabojago.html">가보자고</a></li>
+                  <li><a href="../html/gabowatdago.html">가봤다고</a></li>
+                  <li><a href="../html/event.html">EVENT</a></li>
+                  <li><a href="../html/myPage.html">MY PAGE</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div id="rightContent">
+              <div id="companyInfo">
+                <span>(주)GAXGA | 대표 : 김인선</span> <br>
+                <span>고객센터 031.9941.0082 | 팩스 02.9941.0082</span> <br>
+                <span>주소 : 경기도 안산시 상록구 광덕1로 375 <br>
+                강우프라자 5층 이젠컴퓨터아카데미 안산캠퍼스</span>
+              </div>
+              <div id="socialShare">
+                <img src="../img/snsImg.png" alt="소셜공유">
+              </div>
+            </div>
+          </div>
+          <div id="policy">
+            <ul>
+              <li><a href="#">이용약관   |</a></li>
+              <li><a href="#">   개인정보처리방침   |</a></li>
+              <li><a href="#">   고객센터</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
     <main>
       <div class="event_box"><h1>E V E N T</h1></div>
       <div class="ingEvent_box">
@@ -17,15 +67,15 @@
     </div>
     <div id="ing_box">
       <div class="image_box1">
-        <img id="change_image" src="../img/청룡 수정.png" alt="1번 이벤트" width="100%" height="100%">
+        <img id="change_image" src="../img/진행중 이벤트 최종1.png" alt="1번 이벤트" width="100%" height="100%">
       <button id="num1" onclick='btnClick1()'> 
-        <img src="../img/버튼 수정.png" width="180px" height="180px"></button>
+        <img src="../img/버튼1.png" width="180px" height="180px"></button>
       <button id="num2" onclick='btnClick2()'>
         <img src=../img/버튼2.png width="180px" height="180px"></button>
       <button id="num3" onclick='btnClick3()'>
-        <img src="../img/버튼 수정.png" width="180px" height="180px"></button>
-        <div class="text1"><span>청룡을 잡아라!<br>
-        이벤트 진행 기간<br>
+        <img src=../img/버튼3.png width="180px" height="180px"></button>
+        <div class="text1"><span style="font-size: 30px; font-weight: 500;" ><br>청룡을 잡아라!</span><br>
+        <span style="font-size: 15px; font-weight: 400;">이벤트 진행 기간<br>
         2024.01.01 ~ 2024.01.31<br><br>
         매주 토요일 오전 11시<br>
         주간 베스트 게시글에 오른 모든 분께<br>
@@ -42,7 +92,8 @@
       </div>
       
       <div class="text2">
-        <span>bbbbbbbbbbbbbbbb<br>
+        <span style="font-size: 30px; font-weight: 500;" ><br>청룡을 잡아라!2</span><br>
+        <span style="font-size: 15px; font-weight: 400;">
         이벤트 진행 기간<br>
         2024.01.01 ~ 2024.01.31<br><br>
         매주 토요일 오전 11시<br>
@@ -59,7 +110,8 @@
         </span>
       </div>
       <div class="text3">
-        <span>aaaa<br>
+        <span style="font-size: 30px; font-weight: 500;" ><br>청룡을 잡아라!3</span><br>
+        <span style="font-size: 15px; font-weight: 400;">
         이벤트 진행 기간<br>
         2024.01.01 ~ 2024.01.31<br><br>
         매주 토요일 오전 11시<br>
@@ -73,7 +125,7 @@
         주간 2등 상품 : 여행 워시 키트(총 6가지 구성)<br>
         주간 3등 상품 : 여행 워시 키트(총 3가지 구성)<br>  
         *개인정보 제 3자 제공동의란에 미동의한 회원은 이벤트 당첨 목록에서 제외될 수 있습니다.
-      </span>
+        </span>
         </div>
       </div>
       
@@ -92,7 +144,7 @@
       <div id="image_box2">
         <img id="change_image" src="../img/청룡.png" alt="1번 이벤트" width="100%" height="100%">
         <div class="exit_text">
-          <div class="exit_text_top"><span><pre>    &lt;청룡을 잡아라!&gt;</pre><br>
+          <div class="exit_text_top"><span><br>&lt;청룡을 잡아라!&gt;<br><br>
             &nbsp;&nbsp;&nbsp;&nbsp;이벤트 진행 기간<br>
             &nbsp;&nbsp;&nbsp;&nbsp;2024.01.01 ~ 2024.01.31<br><br></span> 
           <div class="exit_text_bottom">
@@ -124,7 +176,7 @@
       <div id="image_box3">
         <img id="change_image" src="../img/빅청룡.png" alt="1번 이벤트" width="100%" height="100%">
         <div class="exit_text">
-          <div class="exit_text_top"><span><pre>    &lt;청룡2를 잡아라!&gt;</pre><br>
+          <div class="exit_text_top"><span><br>&lt;청룡을 잡아라!&gt;<br><br>
             &nbsp;&nbsp;&nbsp;&nbsp;이벤트 진행 기간<br>
             &nbsp;&nbsp;&nbsp;&nbsp;2024.02.02 ~ 2024.02.29<br><br></span> 
           <div class="exit_text_bottom">
@@ -156,7 +208,7 @@
       <div id="image_box4">
         <img id="change_image" src="../img/빅청룡.png" alt="1번 이벤트" width="100%" height="100%">
         <div class="exit_text">
-          <div class="exit_text_top"><span><pre>    &lt;청룡3을 잡아라!&gt;</pre><br>
+          <div class="exit_text_top"><span><br>&lt;청룡을 잡아라!&gt;<br><br>
             &nbsp;&nbsp;&nbsp;&nbsp;이벤트 진행 기간<br>
             &nbsp;&nbsp;&nbsp;&nbsp;2024.03.02 ~ 2024.03.29<br><br></span> 
           <div class="exit_text_bottom">
@@ -199,6 +251,7 @@
   </main>
   </div>
 <script src="../js/event.js"> </script>
+<script src="../js/menu2.js"> </script>
 
 </body>
 </html>

@@ -1,27 +1,4 @@
 
-@font-face{
-  font-family: 'Jalnan';
-src:url(../fonts/Jalnan2TTF.ttf) ;
-}
-@font-face {
-  font-family: 'GmarketSans1';
-  src: url('../fonts/GmarketSansTTFBold.ttf') format('truetype');
-  font-weight: 600;
-}
-@font-face {
-  font-family: 'GmarketSans2';
-  src: url('../fonts/GmarketSansTTFMedium.ttf') format('truetype');
-  font-weight: 500;
-}
-@font-face {
-  font-family: 'GmarketSans3';
-  src: url('../fonts/GmarketSansTTFLight.ttf') format('truetype');
-  font-weight: 400;
-}
-*{
-  font-family: "Jalnan";
-}
-
 html,body{
 	height: 100%;
 }
@@ -53,6 +30,8 @@ html,body{
     border-top: 1px solid #000000;
     border-bottom: 1px solid #ffffff;;
     font-size: 20px;
+    font-family: 'DMSerif';
+
 }
 .image_box1{
   height: 725px;
@@ -102,6 +81,8 @@ html,body{
   color: #ffffff;
   text-align: center;
   visibility: hidden;
+  font-family: 'GmarketSans';
+  font-weight: 500;
 }
 .text2{
   position: absolute;
@@ -116,6 +97,8 @@ html,body{
   color: #ffffff;
   text-align: center;
   visibility: hidden;
+  font-family: 'GmarketSans';
+  font-weight: 500;
 }
 .text3{
   position: absolute;
@@ -130,6 +113,8 @@ html,body{
   color: #ffffff;
   text-align: center;
   visibility: hidden;
+  font-family: 'GmarketSans';
+  font-weight: 500;
 }
 .exit_text{
   position: absolute;
@@ -149,14 +134,19 @@ html,body{
   text-align: left;
   width: 100%;
   height: 40%;
-  font-size: 30px;
+  font-size: 35px;
+  font-family: 'GmarketSans';
+  font-weight: 600;
 }
 .exit_text_bottom{
   display: flex;
   width: 100%;
   height: 60%;
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
+  font-family: 'GmarketSans';
+  font-weight: 400;
+
 }
 .side_image1{
     display: flex;
@@ -246,6 +236,7 @@ html,body{
     letter-spacing: 3px;
     background-color: #000000;
     border-right: 1px solid #ffffff;
+    font-family: 'Jalnan';
 
 }
 .ingEvent_box{
@@ -266,6 +257,8 @@ html,body{
     float:left;
     font-size: 30px;
     letter-spacing: 3px;
+    font-family: 'Jalnan';
+
 }
 .exit_event:hover{
   filter:brightness(0.5);
@@ -279,7 +272,7 @@ html,body{
   display: none;
 }
 #num1{
-  z-index: 100; 
+  z-index: 90; 
   position: absolute; 
   top:-1px;
   right: -6px;
@@ -289,7 +282,7 @@ html,body{
   cursor: pointer;
 }
 #num2{
-  z-index: 100; 
+  z-index: 89; 
   position: absolute; 
   top:-1px;
   right: -6px;
@@ -299,7 +292,7 @@ html,body{
   cursor: pointer;
 }
 #num3{
-  z-index: 100; 
+  z-index: 88; 
   position: absolute; 
   top:-1px;
   right: -6px;
