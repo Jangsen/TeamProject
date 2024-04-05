@@ -6,6 +6,6 @@ function activeTab(){
       headerColor.style.backgroundColor = '#063F3B';
   } else {
     drop.style.display = 'none';
-    headerColor.style.backgroundColor = 'transparent';
+    headerColor.style.backgroundColor = 'black';
   }
 }
