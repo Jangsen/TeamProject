@@ -84,7 +84,7 @@ textElement16.addEventListener("mouseover", function() {
 const textElement17 = document.getElementById("text17");
 
 textElement17.addEventListener("mouseover", function() {
-  imageElement.src = "../img/gapyeonghyang-gyo.png";
+  imageElement.src = "../img/gamaksan.png";
 });
 const textElement18 = document.getElementById("text18");
 

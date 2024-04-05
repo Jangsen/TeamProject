@@ -167,7 +167,7 @@
     }
     .intro .right input {
       /* margin-top: 120px; */
-      width: 60%;
+      width: 35%;
       height: 40px;
       background: transparent;
       color: #fff;
@@ -177,6 +177,11 @@
       text-align: center;
       font-family: 'DMSerif';
       font-weight: 400;
+      border-right: none;
+      border-top: none;
+      border-left: none;
+      border-bottom-width: 1px;
+      margin-left: 20px;
     }
     .intro ::placeholder{
       color: #27292A;
@@ -237,7 +242,7 @@
       align-items: center;
     }
     .subject .right img{
-      width: 100%;
-      height: 100%;
+      width: 95%;
+      height: 95%;
       border-radius: 10px;
     }
