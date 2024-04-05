@@ -8,10 +8,11 @@
     comment_save.addEventListener("click", function(e){
       e.preventDefault();
 
-      const cmt = document.createElement("li");
+      const cmt = document.createElement("h1");
       cmt.innerHTML = `
-      ${client.value} - ${comment.value}
-      <span class="delButton" style="cursor:pointer">삭제</span>
+      <pre>
+      ${client.value}                           ${comment.value}
+      <pre><button class="delButton">삭제</button>
       `;
       comment_list.appendChild(cmt);
 

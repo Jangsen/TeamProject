@@ -13,10 +13,14 @@
 .Waname {
   width: 100%;
   height: 10vh;
-  font-size: 50px;
+  font-size: 70px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
+  color:  #6A6A6A;
+  font-family: 'GmarketSans';
+  font-weight: 600;
+  margin-left: 30px;
 }
 .Waprofile {
   height: 25vh;
@@ -58,7 +62,21 @@
   justify-content: space-around;
   margin-left: 10%;
 }
+.Wausername{
+  font-family: 'GmarketSans';
+  font-weight: 500;
+  color: #6A6A6A;
+  font-size: 28px;
+}
+.Waemail{
+  font-family: 'GmarketSans';
+  font-weight: 400;
+  color: #6A6A6A;
+  font-size: 18px;
+}
 .intro{
+  font-family: 'GmarketSans';
+  font-weight: 400;
   display: flex;
   width: 100%;
   height: 5vh ;
@@ -67,7 +85,7 @@
   justify-content: center;
   font-family: "GmarketSans3";
   color: #6A6A6A;
-  font-size: 20px;
+  font-size: 18px;
   border-bottom: 1px solid;
 }
 .review-list-box{
@@ -88,22 +106,40 @@
   display: flex;
 }
 .review-image{
-  width: 25%;
+  width: 30%;
+  height: 90%;
+  align-self: center;
+  margin: 0px 5px;
+  /* margin: 10px 10px; */
 }
 .review-image img{
   width: 100%;
   height:100%;
+  border-radius: 10px;
 }
 .review-info{
   width:75%;
   display:flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   font-family: "GmarketSans2";
   color: #1F1E1E;
 }
+.review-name{
+  font-family: 'GmarketSans';
+  font-weight: 500;
+  color: #1F1E1E;
+  font-size: 20px;
+}
+.review-address{
+  font-family: 'GmarketSans';
+  font-weight: 400;
+  color: #1F1E1E;
+  font-size: 15px;
+}
 .review-info a{
   text-decoration: none;
+  color: #1F1E1E;
 }
 
 .Waright {
@@ -116,23 +152,27 @@
 .post-title{
   height: 100%;
   text-align: left;
-  font-size: 45px;
+  font-size: 55px;
   justify-content: center;
   display: flex;
   flex-direction: column;
   width: 100%;
-  /* border-bottom: 1px black ridge;
-  padding:10px */
-  font-family: "GmarketSans2";
+  font-family: 'GmarketSans';
+  font-weight: 500;
   color: #6A6A6A;
   border-bottom: 1px black dotted;
   
 }
 .intro-area{
+  width: 100%;
   display: flex;
+  font-family: 'GmarketSans';
+  font-weight: 400;
+  color: #6A6A6A;
+  font-size: 18px;
 }
 .post-info{
-  width: 100%;
+  width: 50%;
   height: 5%;
   display: flex;
   flex-direction: column;
@@ -140,7 +180,7 @@
 }
 input[type="button"]{
   width: 10%;
-  background-color: #007bff;
+  background-color: #063F3B;
   color:#fff;
   cursor: pointer;
   margin-left: 5px;
@@ -148,15 +188,17 @@ input[type="button"]{
   border-radius: 5px;
 }
 .loctag{
-  width: 40%;
+  width: 80%;
   display: flex;
-  justify-content: space-between;
+  margin-top: 20px;
 }
 .loctag .loc{
+  margin-right: 30px;
 
 }
 .loctag .tag a{
   text-decoration-line: none;
+  color: #6A6A6A;
 }
 .date{
   width: 33%;
@@ -166,13 +208,14 @@ input[type="button"]{
 }
 .like{
   width: 100%;
-  text-align: center;
+  text-align: right;
   font-size: 18px;
   font-family: "GmarketSans3";
   color: #6A6A6A;
+  margin-bottom: 20px;
 }
 .delete{
-  width: 33%;
+  width: 50%;
   text-align: right;
   display: flex;
   flex-direction: column;
@@ -181,24 +224,7 @@ input[type="button"]{
   position: relative;
   width: 100%;
   height: 50vh;
-  /* display: flex;
-  justify-content: space-around;
-  margin-bottom: 30px;
-  margin-left: 70px;
-  align-items: center; */
 }
-/* .image-box div{
-  width: 100%;
-  height: 100%;
-  align-content: center;
-  text-align: center;
-}
-.image-box img{
-  border: 1px solid #000000;
-  border-radius: 10px;
-  width: 95%;
-  height: 90%;
-} */
 
  /* slider__wrap */
 .slider__wrap {
@@ -208,7 +234,8 @@ input[type="button"]{
   transform: translate(-50%, -50%);
   width: 800px;
   height: 450px;
-  box-shadow: 0 50px 100px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 3px 6px 2px #6b6b6b;
+  border-radius : 20px;
 }
 .slider__img {
   position: relative;
@@ -224,6 +251,7 @@ input[type="button"]{
   opacity: 0;
   transform: scale(1.1);
   transition: all 500ms ease-in-out;
+  border-radius: 20px;
 }
 .slider__img img.active {
   opacity: 1;
@@ -267,28 +295,29 @@ input[type="button"]{
 .slider__btn a.next {
   right: 0;
 }
-/* .slider__btn a:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-} */
+
 .text-box{
   width: 80%;
-  height: 30vh;
+  height: 50vh;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 25px;
-  font-family: "GmarketSans3";
-  color: #6A6A6A;
+  font-size: 20px;
+  font-family: 'GmarketSans';
+  font-weight: 400;
+  color: #000000;
   margin-bottom: 30px;
   margin-left: 100px;
 }
 .comment-container{
   margin-top: 30px;
+  padding: 15px 0px;
   width: 98%;
   height: auto;
   display: flex;
   flex-direction: column;
+  border: 1px solid;
 }
 .comment-input{
   display:flex;
@@ -311,7 +340,7 @@ input[type="button"]{
 .comment-input input[type="submit"] {
   margin-left: 10px;
   padding: 5px 10px;
-  background-color: #007bff;
+  background-color: #063F3B;
   color:#fff;
   border : none;
   border-radius: 5px;
@@ -339,8 +368,9 @@ input[type="button"]{
 }
 .comment-list-box{
   width: 100%;
-  height: 200px;
-  /* border: 1px #000000 ridge; */
+  height: 20vh;
+  border-top: 1px solid;
+  margin-top: 15px;
 }
 .comment-name{
   float: left;
@@ -354,9 +384,9 @@ input[type="button"]{
   width: 100%;
   height: 100%;
 }
-#map {
-  width: 90%;
-  height: 50vh; /* 지도의 높이 설정 */
+#maps {
+  width: 80%;
+  height: 40vh; /* 지도의 높이 설정 */
   margin-left: 113px;
   margin-right: 74px;
 }
