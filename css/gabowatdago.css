@@ -57,7 +57,8 @@
       width: 100%;
       height: 20vh;
       background-color: #000;
-      color: #fff;
+      color: #d8d8d8;
+      
     }
     .intro .left, .center, .right {
       flex: 1;
@@ -78,34 +79,37 @@
       justify-content: end;
       font-size: 80px;
       font-family: 'GmarketSans';
-      font-weight: 600;
+      font-weight: 500;
     }
     .intro .left .thema {
       display: flex;
       justify-content: end;
       align-self: end;
       font-family: 'GmarketSans';
-      font-weight: 600;
-      font-size: 30px;
+      font-weight: 500;
+      font-size: 25px;
     }
     .intro .left .thema a{
       width: 100%;
       text-decoration-line: none;
       color: #adadad;
+      padding-right: 20px;
+      padding-left: 20px;
     }
     .subject .left span{
       margin: 0px 4px;
     }
-    .intro .left .thema div{
+    /* .intro .left .thema div{
       width: 1px;
       background-color: #adadad;
       height: 30px;
       margin: 0px 5px;
       align-self: center;
       
-    }
+    } */
     .intro .left .thema a:hover {
-      color: #969696
+      color: #969696;
+      
     }
     .intro .left .thema pre{
       font-size: 30px;

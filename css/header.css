@@ -107,15 +107,25 @@ header{
 .menu ul {
   list-style-type: none;
   
+  
 }
 .menu ul li {
   margin: 20px 0px;
+
 }
 .menu ul li a {
   text-decoration-line: none;
   
 }
-.menu ul li a:visited{
+
+
+/* .menu li{
+  color: green;
+} */
+
+
+
+.menu ul li a:visited, a:link{
   color: #CDCBCB;
   
 }
