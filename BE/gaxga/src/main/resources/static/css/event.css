@@ -272,8 +272,8 @@ html,body{
   display: none;
 }
 #num1{
-  z-index: 90; 
-  position: absolute; 
+  z-index: 90;
+  position: absolute;
   top:-1px;
   right: -6px;
   border: none;
@@ -282,8 +282,8 @@ html,body{
   cursor: pointer;
 }
 #num2{
-  z-index: 89; 
-  position: absolute; 
+  z-index: 89;
+  position: absolute;
   top:-1px;
   right: -6px;
   border: none;
@@ -292,8 +292,8 @@ html,body{
   cursor: pointer;
 }
 #num3{
-  z-index: 88; 
-  position: absolute; 
+  z-index: 88;
+  position: absolute;
   top:-1px;
   right: -6px;
   border: none;
