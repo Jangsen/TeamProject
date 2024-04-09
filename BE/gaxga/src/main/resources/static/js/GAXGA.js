@@ -142,7 +142,7 @@ let currentIndex = 0;
 
         function prevCategory() {
             currentIndex = (currentIndex - 1 + totalItems) % totalItems;
-            showCategory(currentIndex);
+             showCategory(currentIndex);
         }
 
         function nextCategory() {
