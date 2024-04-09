@@ -158,6 +158,7 @@ margin: 40px;
 
 #login_main #bottom #agreement a{
   text-decoration-line: none;
+  color: black;
 }
 #login_main #bottom #agreement a:visited{
   color: black;
