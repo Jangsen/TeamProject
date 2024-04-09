@@ -3,13 +3,13 @@ const imageElement = document.getElementById("image");
 const textElement1 = document.getElementById("text0");
 
 textElement1.addEventListener("mouseover", function() {
-  imageElement.src= "../img/seoulcafe1.png";
+  imageElement.src = "../img/loc/강원/강원-갈미조개.jpg";
 });
 
 const textElement2 = document.getElementById("text2");
 
 textElement2.addEventListener("mouseover", function() {
-  imageElement.src = "../img/seoulcafe2.png";
+  imageElement.src = "img/loc/서울/seoulcafe1.png";
 });
 const textElement3 = document.getElementById("text3");
 
