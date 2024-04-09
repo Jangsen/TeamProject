@@ -10,4 +10,6 @@ public class GabowatdagoController {
     public String newForm(){
         return "gabowatdago/gabowatdagoing_p";
     }
+
+
 }
