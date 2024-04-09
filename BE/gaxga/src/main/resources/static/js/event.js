@@ -1,7 +1,8 @@
 //마우스 오버 이미지 바꾸기
   const ing_event=document.querySelector('.ingEvent');
   const exit_event=document.querySelector('.exit_event');
-  const change_image = document.querySelector("#change_image");
+  const change_image = document.querySelector(".change_image");
+
   const ing_box = document.querySelector('#ing_box');
   const exit_box = document.querySelector('#exit_box');
   const image_box1 = document.querySelector(".side_image1");
@@ -50,7 +51,7 @@
 
 // 마우스 오버되면 상세보기 끄기 / 이미지 바꾸기
   image_box1.addEventListener("mouseover", function(){
-    change_image.src="../img/진행중 이벤트 최종1.png"
+    change_image.src="/img/진행중 이벤트 최종1.png"
     mydiv2.style.visibility = "hidden"
     mydiv3.style.visibility = "hidden"
     //마우스 오버 시 div 클래스 변경
@@ -60,7 +61,7 @@
     
   });
   image_box2.addEventListener("mouseover", function(){
-    change_image.src="../img/진행중 이벤트 최종2.png"
+    change_image.src="/img/진행중 이벤트 최종2.png"
     //마우스오버 상세정보 사라지기
     mydiv1.style.visibility = "hidden"
     mydiv3.style.visibility = "hidden"
@@ -71,7 +72,7 @@
     button3.style.visibility ="hidden"
   });
   image_box3.addEventListener("mouseenter", function(){
-    change_image.src="../img/진행중 이벤트 최종3.png"
+    change_image.src="/img/진행중 이벤트 최종3.png"
     
     //마우스오버 상세정보 사라지기
     mydiv1.style.visibility = "hidden"

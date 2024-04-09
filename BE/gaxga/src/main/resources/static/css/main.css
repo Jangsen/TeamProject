@@ -309,18 +309,19 @@ footer #top{
   font-size: 25px;
   color: #CDCBCB;
 }
-footer #policy{
+footer #policy2{
   margin-top: 60px;
-  font-family: 'DMSerif';
-  font-weight: 500;
-  font-size: 25px;
+  font-size: 22px;
   color: #CDCBCB;
   text-align: center;
 }
-footer #policy a{
+footer #policy2 a{
   color: #CDCBCB;
   text-decoration-line: none;
+  font-family: 'GmarketSans';
+  font-weight: 400;
 }
+
 footer #footerImg{
   width: 100%;
   height: 100%;
@@ -340,4 +341,40 @@ footer Img{
   position: relative;
   bottom: 0;
   justify-content: center;
+}
+
+ #area-No2-3{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10vh;
   }
+  #icons{
+    display: flex;
+    align-items: end;
+    list-style: none;
+    padding-left: 0;
+    font-size: 30px;
+    padding: 8px 12px;
+    color: #fff;
+    width: 100%;
+    justify-content: end;
+  }
+  #icons a{
+    color: #fff;
+  }
+  #icons a:hover{
+    color: #063F3B;
+    #icons a:hover{
+
+      }
+      #icons li{
+        margin: 4px 6px;
+      }
+
+      @media (max-width: 770px){
+        #pageNameGabojago a{
+
+          font-size: 70px;
+        }
+      }
