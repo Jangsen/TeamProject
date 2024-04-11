@@ -20,15 +20,14 @@ public class GabowatdagoController {
     }
 
     @PostMapping("/gabowatdago/create")
-    public String create(GabowatdagoForm form){
-//        log.info(form.toString());
-        System.out.println(form.toString());
-        //1.dto를 엔티티로 변환
+    public String create(GabowatdagoForm form) {
+        log.info(form.toString());
+        //1. DTO를 엔티티로
         Gabowatdago gabowatdago = form.toEntity();
         log.info(gabowatdago.toString());
-        //2. 레퍼지토리로 db에 저장
+        //2. 레퍼지토리로 엔티티를 DB에 저장
         Gabowatdago saved = gabowatdagoRepository.save(gabowatdago);
         log.info(saved.toString());
-        return "";
+    return "";
     }
 }

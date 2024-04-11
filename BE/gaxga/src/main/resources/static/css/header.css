@@ -89,11 +89,6 @@ header{
   font-size: 25px;
   color: #CDCBCB;
 }
-.companyContents #socialShare img {
-  width: 376PX;
-  height: 55px;
-  margin: 10px;
-}
 .menu {
   font-family: 'GmarketSans';
   font-weight: 400;
@@ -117,14 +112,6 @@ header{
   text-decoration-line: none;
   
 }
-
-
-/* .menu li{
-  color: green;
-} */
-
-
-
 .menu ul li a:visited, a:link{
   color: #CDCBCB;
   

@@ -40,9 +40,11 @@ video {
   font-family: 'GmarketSans';
   font-weight: 600;
   font-size: 160px;
-  text-shadow: 0px 5px 8px rgb(53, 49, 49);
-  color: white;
-}
+  /*text-shadow: 0px 5px 8px rgb(53, 49, 49);*/
+  color:rgba(54,141,252,.8);
+  text-shadow:1px 1px 0px BLACK,0 0 0 #000}
+  /*color: white;*/
+
 
 
 .page #pageContent1{
@@ -129,7 +131,7 @@ video {
 .page #GaInfo1{
   position: absolute;
   top : 600px;
-  right: 100;
+  right: 100px;
 }
 .page #GaInfo1 p{
   font-family: 'GmarketSans';
@@ -263,7 +265,7 @@ color: white;
 .page #GaInfo2{
   position: absolute;
   top : 600px;
-  right: 250;
+  right: 250px;
   
 }
 .page #GaInfo2 p{
@@ -329,7 +331,7 @@ footer #footerImg{
 footer #backtop{
   text-align: right;
   font-family: 'DMSerif';
-  font-weight: 400px;
+  font-weight: 400;
 }
 footer #backtop a{
   color: #CDCBCB;
@@ -360,21 +362,19 @@ footer Img{
     width: 100%;
     justify-content: end;
   }
-  #icons a{
-    color: #fff;
+#icons a{
+  color: #fff;
+}
+#icons a:hover {
+  color: #063F3B;
+}
+#icons li {
+  margin: 4px 6px;
+}
+
+@media (max-width: 770px) {
+  #pageNameGabojago a {
+
+    font-size: 70px;
   }
-  #icons a:hover{
-    color: #063F3B;
-    #icons a:hover{
-
-      }
-      #icons li{
-        margin: 4px 6px;
-      }
-
-      @media (max-width: 770px){
-        #pageNameGabojago a{
-
-          font-size: 70px;
-        }
-      }
+}
