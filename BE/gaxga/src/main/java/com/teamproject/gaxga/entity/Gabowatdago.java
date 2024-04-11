@@ -1,22 +1,23 @@
 package com.teamproject.gaxga.entity;
 
-import jakarta.annotation.Nullable;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+
+import java.time.LocalDateTime;
 
 @Entity
-@ToString
 @AllArgsConstructor
 @NoArgsConstructor
+@ToString
 @Getter
-public class Gabowatdago {
-
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class Gabowatdago extends BaseEntity {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
 
     @Column
     private String title;
@@ -25,18 +26,11 @@ public class Gabowatdago {
     @Column
     private String tema;
     @Column
-    @Nullable
-    private String image;
-    @Column
-    private String date;
-    @Column
-    private String writer;
-    @Column
     private String content;
+    @Column
+    private String image;
     @Column
     private String address;
     @Column
     private String de_address;
-
-
 }
