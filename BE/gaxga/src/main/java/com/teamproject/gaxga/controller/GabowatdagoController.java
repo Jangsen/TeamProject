@@ -3,10 +3,13 @@ package com.teamproject.gaxga.controller;
 import com.teamproject.gaxga.dto.GabowatdagoForm;
 import com.teamproject.gaxga.entity.Gabowatdago;
 import com.teamproject.gaxga.repository.GabowatdagoRepository;
+import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Slf4j
@@ -29,5 +32,16 @@ public class GabowatdagoController {
         Gabowatdago saved = gabowatdagoRepository.save(gabowatdago);
         log.info(saved.toString());
     return "";
+    }
+    @GetMapping("/gabowatdago/{id}")
+    public String show(@PathVariable Long id, Model model) {
+        log.info("id: " + id);
+        //1. id를 조회해 데이터 가져오기
+        Gabowatdago gabowatdagoEntity = gabowatdagoRepository.findById(id).orElse(null);
+        log.info(gabowatdagoEntity.toString());
+        //2. 모델에 데이터 등록하기
+        model.addAttribute("gabowatdago", gabowatdagoEntity);
+        //3. 뷰 페이지 반환하기
+        return "gabowtdago/gabowatdagoing";
     }
 }
