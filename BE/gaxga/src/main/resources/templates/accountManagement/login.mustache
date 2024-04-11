@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,15 +14,15 @@
         </div>
         <div id="middle">
             <h3>Login</h3>
-            <form method="get" action="/login" id="login_form">
+            <form method="post" action="/login" id="login_form">
                 <div id="login_area">
                     <div id="id_area">
                         <i class="fa-solid fa-user"></i>
-                        <input type="text" name="userId" placeholder="아이디를 입력하세요." maxlength="12">
+                        <input type="text" name="userId" placeholder="아이디를 입력하세요." maxlength="12" autocomplete="username">
                     </div>
                     <div id="password_area">
                         <i class="fa-solid fa-unlock"></i>
-                        <input type="password" name="userPassword" placeholder="비밀번호를 입력하세요." maxlength="12">
+                        <input type="password" name="password" placeholder="비밀번호를 입력하세요." maxlength="12" autocomplete="off">
                     </div>
                 </div>
                 <label for="saveId">
@@ -33,7 +32,7 @@
                 <div id="findInfo">
                     <a href="findInfo.html"> <input type="button" value="아이디/비밀번호 찾기" id="find_Id"></a>
                     <div class="line"></div>
-                    <a href="joinMembership.html"><input type="button" value="회원 가입" id="joinMembership"></a>
+                    <a href="joinMembership"><input type="button" value="회원 가입" id="joinMembership"></a>
                 </div>
             </form>
         </div>
