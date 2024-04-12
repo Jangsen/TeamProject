@@ -44,6 +44,6 @@ SELECT * FROM gaj_img;
 
 INSERT INTO GAJ VALUES ('悪据');
 
-
+-- しししししし
 
 
