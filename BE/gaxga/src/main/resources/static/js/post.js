@@ -87,5 +87,13 @@
         }).open();
     }
     // 날짜 스크립트
+  var today = new Date();
+  const date = document.querySelector(".date");
+  var year = today.getFullYear();
+  var month = ('0' + (today.getMonth() + 1)).slice(-2);
+  var day = ('0' + today.getDate()).slice(-2);
 
+  var dateString = year + '-' + month  + '-' + day;
+
+  date.innerText = `${dateString}`;
 

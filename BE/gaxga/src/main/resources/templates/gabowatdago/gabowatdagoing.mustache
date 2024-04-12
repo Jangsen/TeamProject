@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="../css/post_result_.css">
 {{>layouts/header}}
-
+{{#gabowatdago}}
     <div class="Waarea">
       <div class="Waleft">
         <div class="Waname">가봤다고</div>
@@ -100,19 +100,18 @@
       </div>
       <div class="Waright">
         <div class="post-result">
-          <div class="title-box">
-            <div class="post-title">인천 월미도 방문 후기 !!
-            </div>
+          <div class="title-box" style="height: 15%">
+            <div class="post-title">{{title}}</div>
           </div>      
           <div class="intro-area">
           <div class="post-info">
               <div class="date">
                 게시날짜: 
-                <span>2024/03/28</span>
+                <span>{{regDate}}</span>
               </div>
               <div class="loctag">
                 <div class="loc">
-                  지역: <span></span>
+                  지역: {{local}}
                 </div>
                 <div class="tag">
                   여행 태그:<span>
@@ -129,7 +128,7 @@
               </div>
               <div>
                 <input type="button" value="수정">
-                <input type="button" value="삭제"> 
+                <input type="button" value="삭제">
               </div>
             </div>
           </div> 
@@ -145,8 +144,9 @@
             </div>
             </div>    
             <div class="text-box">
-              TEXT BOX
+                {{content}}
             </div>
+              <div style="font-family: GmarketSans; color:#6A6A6A" ><h3>여행지 주소</h3><br> {{address}}&nbsp;{{de_address}}</div>
             <div id="maps"></div>
     
             <div class="comment-container">
@@ -155,12 +155,11 @@
                 <input style ="width: 20%;" id="client" type ="text" maxlength="10" placeholder="닉네임">
                 <input style ="width: 80%;" id="comment" type ="text" placeholder="작성자에게 댓글을 남겨주세요">
                 <input id="comment-save" type="submit" value="댓글 작성">
-                </div>
+              </form>
+              </div>
                 <div class="comment-list">
                 </div>
-              </form>
               <div class="comment-list-box">
-              
               <!-- <ul class="comment-list">
               </ul> -->
             
@@ -172,11 +171,12 @@
       </div>
     </div>
   </div>
+{{/gabowatdago}}
     <script src="../js/post_result.js"></script>
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6d7e2f086ffa97eb8f4b35fa8cc12439"></script>
     <script>
       //----------------------------------------------------------------------지도
-    var mapContainer = document.getElementById('maps'), // 
+    var mapContainer = document.getElementById('maps'), //
             mapOption = {
                 center: new kakao.maps.LatLng(37.537187, 127.005476), // 지도의 중심좌표
                 level: 6 // 지도의 확대 레벨
