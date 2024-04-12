@@ -18,7 +18,6 @@ public class Gabowatdago extends BaseEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-
     @Column
     private String title;
     @Column

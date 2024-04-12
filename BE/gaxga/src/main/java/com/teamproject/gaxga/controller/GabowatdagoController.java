@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import java.util.List;
+
 @Slf4j
 @Controller
 public class GabowatdagoController {
@@ -35,13 +37,22 @@ public class GabowatdagoController {
     }
     @GetMapping("/gabowatdago/{id}")
     public String show(@PathVariable Long id, Model model) {
-        log.info("id: " + id);
         //1. id를 조회해 데이터 가져오기
         Gabowatdago gabowatdagoEntity = gabowatdagoRepository.findById(id).orElse(null);
-        log.info(gabowatdagoEntity.toString());
-        //2. 모델에 데이터 등록하기
+        //2. 가져온 데이터를 모델에 등록하기
         model.addAttribute("gabowatdago", gabowatdagoEntity);
-        //3. 뷰 페이지 반환하기
-        return "gabowtdago/gabowatdagoing";
+        log.info(model.toString());
+        //3. 조회한 데이터를 사용자에게 보여주기 위한 뷰 페이지 만들고 반환하기
+        return "gabowatdago/gabowatdagoing";
+    }
+
+    @GetMapping("/gabowatdago")
+    public String index(Model model){
+        //1. 모든 데이터 가져오기
+        List<Gabowatdago> gabowatdagoEntityList = gabowatdagoRepository.findAll();
+        //2. 모델에 데이터 등록하기
+        model.addAttribute("gabowatdagoList", gabowatdagoEntityList);
+        //3. 뷰 페이지 등록하기
+        return "gabowatdago/gabowatdago";
     }
 }

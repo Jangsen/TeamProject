@@ -128,3 +128,4 @@ function imageSlider(parent, images){
 };
 
 imageSlider(document.querySelector(".slider__wrap"), images);
+

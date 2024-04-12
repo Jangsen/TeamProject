@@ -1,215 +1,153 @@
 const imageElement = document.getElementById("image");
 
-const textElement1 = document.getElementById("text0");
+const textElement1 = document.getElementById("text1");
 
 textElement1.addEventListener("mouseover", function() {
-  imageElement.src = "../img/loc/강원/강원-갈미조개.jpg";
+  imageElement.src = "img/loc/강원/강원-BTS버스정류장.jpg";
 });
 
 const textElement2 = document.getElementById("text2");
 
 textElement2.addEventListener("mouseover", function() {
-  imageElement.src = "img/loc/서울/seoulcafe1.png";
+  imageElement.src = "../img/loc/강원/강원-갈미조개.jpg";
 });
 const textElement3 = document.getElementById("text3");
 
 textElement3.addEventListener("mouseover", function() {
-  imageElement.src = "../img/seoulcafe3.png";
+  imageElement.src = "../img/loc/강원/강원-검룡소.jpg";
 });
 const textElement4 = document.getElementById("text4");
 
 textElement4.addEventListener("mouseover", function() {
-  imageElement.src = "../img/namsan.png";
+  imageElement.src = "../img/loc/강원/강원-꽃게집.jpg";
 });
 const textElement5 = document.getElementById("text5");
 
 textElement5.addEventListener("mouseover", function() {
-  imageElement.src = "../img/wolmido.png";
+  imageElement.src = "../img/loc/강원/강원-꽃게집2.jpg";
 });
 const textElement6 = document.getElementById("text6");
 
 textElement6.addEventListener("mouseover", function() {
-  imageElement.src = "../img/Oworld.png";
+  imageElement.src = "../img/loc/강원/강원-돼통령.jpg";
 });
 const textElement7 = document.getElementById("text7");
 
 textElement7.addEventListener("mouseover", function() {
-  imageElement.src = "../img/kingsejong.png";
+  imageElement.src = "../img/loc/강원/강원-설악산.jpg";
 });
 const textElement8 = document.getElementById("text8");
 
 textElement8.addEventListener("mouseover", function() {
-  imageElement.src = "../img/botanicgarden.png";
+  imageElement.src = "../img/loc/강원/강원-소양강스카이워크.jpg";
 });
 const textElement9 = document.getElementById("text9");
 
 textElement9.addEventListener("mouseover", function() {
-  imageElement.src = "../img/childgrandpark.png";
+  imageElement.src = "../img/loc/강원/강원-아르떼뮤지엄.jpg";
 });
 const textElement10 = document.getElementById("text10");
 
 textElement10.addEventListener("mouseover", function() {
-  imageElement.src = "../img/seoulcafe1.png";
+  imageElement.src = "../img/loc/강원/강원-아바이마을.jpg";
 });
 const textElement11 = document.getElementById("text11");
 
 textElement11.addEventListener("mouseover", function() {
-  imageElement.src = "../img/seoulcafe2.png";
+  imageElement.src = "../img/loc/강원/강원-양양전통시장.jpg";
 });
 const textElement12 = document.getElementById("text12");
 
 textElement12.addEventListener("mouseover", function() {
-  imageElement.src = "../img/seoulcafe3.png";
+  imageElement.src = "../img/loc/강원/강원-중앙시장.jpg";
 });
 const textElement13 = document.getElementById("text13");
 
 textElement13.addEventListener("mouseover", function() {
-  imageElement.src = "../img/pajeonstreet.png";
+  imageElement.src = "../img/loc/강원/강원-지지리골 자작나무숲.jpg";
 });
 const textElement14 = document.getElementById("text14");
 
 textElement14.addEventListener("mouseover", function() {
-  imageElement.src = "../img/jokbalalley.png";
+  imageElement.src = "../img/loc/강원/강원-직탕폭포.jpg";
 });
 const textElement15 = document.getElementById("text15");
 
 textElement15.addEventListener("mouseover", function() {
-  imageElement.src = "../img/tteokbokkitown.png";
+  imageElement.src = "../img/loc/강원/강원-평창동계올림픽기념관.jpg";
 });
 const textElement16 = document.getElementById("text16");
 
 textElement16.addEventListener("mouseover", function() {
-  imageElement.src = "../img/gamaksan.png";
+  imageElement.src = "../img/loc/강원/강원-황지연못.jpg";
 });
 const textElement17 = document.getElementById("text17");
 
 textElement17.addEventListener("mouseover", function() {
-  imageElement.src = "../img/gamaksan.png";
+  imageElement.src = "../img/loc/경기/경기-감악산.jpg";
 });
 const textElement18 = document.getElementById("text18");
 
 textElement18.addEventListener("mouseover", function() {
-  imageElement.src = "../img/hangugminsogchon.png";
+  imageElement.src = "../img/loc/경기/경기-제일시장.jpg";
 });
 const textElement19 = document.getElementById("text19");
 
 textElement19.addEventListener("mouseover", function() {
-  imageElement.src = "../img/cafesoom.png";
+  imageElement.src = "../img/loc/경기/경기-카페숨.jpg";
 });
 const textElement20 = document.getElementById("text20");
 
 textElement20.addEventListener("mouseover", function() {
-  imageElement.src = "../img/jeilsijang.png";
+  imageElement.src = "../img/loc/경기/경기-한국민속촌.jpg";
 });
 const textElement21 = document.getElementById("text21");
 
 textElement21.addEventListener("mouseover", function() {
-  imageElement.src = "../img/cheonglyangsan2.png";
+  imageElement.src = "../img/loc/경남/경남문화.jpg";
 });
 const textElement22 = document.getElementById("text22");
 
 textElement22.addEventListener("mouseover", function() {
-  imageElement.src = "../img/cheonglyangsan1.png";
+  imageElement.src = "../img/loc/경남/경남시장.png";
 });
 const textElement23 = document.getElementById("text23");
 
 textElement23.addEventListener("mouseover", function() {
-  imageElement.src = "../img/incheonsanglyugjagjeon.png";
+  imageElement.src = "../img/loc/경남/경남카페.jpg";
 });
 const textElement24 = document.getElementById("text24");
 
 textElement24.addEventListener("mouseover", function() {
-  imageElement.src = "../img/wolmido.png";
+  imageElement.src = "../img/loc/경남/경남테마.jpg";
 });
 const textElement25 = document.getElementById("text25");
 
 textElement25.addEventListener("mouseover", function() {
-  imageElement.src = "../img/forestoutings.png";
+  imageElement.src = "../img/loc/경남/산 또는 바다.jpg";
 });
 
-// mouseover
 
-let currentIndex = 0;
-        const categoryItems = document.querySelectorAll('.intro .center .list');
-        const totalItems = categoryItems.length;
+// search
+// 검색어 입력란과 subject 요소를 가져옵니다.
+const searchInput = document.querySelector('.right input[type="search"]');
+const subject = document.querySelector('.subject .left');
 
-        function showCategory(index) {
-            categoryItems.forEach(item => {
-                item.style.display = 'none';
-            });
-            categoryItems[index].style.display = 'inline-block';
+// 검색어가 변경될 때마다 필터링 함수를 호출합니다.
+searchInput.addEventListener('input', filterSubjects);
+
+// 검색어에 따라 subject 요소를 필터링하는 함수입니다.
+function filterSubjects() {
+    const searchTerm = searchInput.value.toLowerCase(); // 검색어를 소문자로 변환합니다.
+    const subjectItems = subject.querySelectorAll('a'); // subject 내의 링크 요소들을 가져옵니다.
+
+    subjectItems.forEach(item => {
+        const text = item.textContent.toLowerCase(); // 링크의 텍스트를 소문자로 변환합니다.
+        // 검색어가 포함된 항목만 표시합니다.
+        if (text.includes(searchTerm)) {
+            item.style.display = 'flex';
+        } else {
+            item.style.display = 'none';
         }
-
-        function prevCategory() {
-            currentIndex = (currentIndex - 1 + totalItems) % totalItems;
-             showCategory(currentIndex);
-        }
-
-        function nextCategory() {
-            currentIndex = (currentIndex + 1) % totalItems;
-            showCategory(currentIndex);
-        }
-
-        // 페이지 로드 시 첫 번째 카테고리 항목 보이기
-        showCategory(currentIndex);
-
-
-// // search
-// const search = document.querySelector("input");
-// const ul = document.querySelector("ul");
-// const result = document.getElementById("result");
-// const fruits = [
-//   "apple",
-//   "banana",
-//   "orange",
-//   "lemon",
-//   "lime",
-//   "pure",
-//   "peach",
-//   "berry",
-// ];
-
-// fruits.forEach((fruit) => {
-//   const li = document.createElement("li");
-//   li.innerText = fruit;
-//   ul.appendChild(li);
-//   clickItem(ul, li);
-// });
-
-// function handleHidden() {
-//   ul.hidden = ul.hidden ? false : true;
-// }
-
-// search.addEventListener("focusin", handleHidden);
-
-// search.addEventListener("focusout", handleHidden);
-
-// search.addEventListener("input", (e) => {
-//   ul.childNodes.forEach((li) => {
-//     clickItem(ul, li, search, e.target.value);
-//   });
-// });
-
-// function clickItem(ul, li, input, searchItem) {
-//   if (searchItem) {
-//     li.hidden = li.textContent.includes(searchItem) ? false : true;
-//   }
-//   li.addEventListener("mouseover", () => {
-//     search.removeEventListener("focusout", handleHidden);
-//     li.style.cursor = "pointer";
-//     li.style.background = "pink";
-//     ul.hidden = false;
-//     li.addEventListener("click", (e) => {
-//       result.innerText = e.target.textContent;
-//       ul.hidden = true;
-//       if (input) {
-//         input.value = "";
-//       }
-//       ul.childNodes.forEach((li) => li.removeAttribute("hidden"));
-//     });
-//   });
-//   li.addEventListener("mouseleave", () => {
-//     search.addEventListener("focusout", handleHidden);
-//     li.style.background = "transparent";
-//   });
-// }
+    });
+}

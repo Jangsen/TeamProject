@@ -279,6 +279,10 @@
       font-weight: 600;
       text-rendering: optimizeLegibility;
     }
+    .intro .center .list {
+        text-decoration-line: none;
+
+    }
     .intro .center button {
       text-decoration-line: none;
       color: #fff;
